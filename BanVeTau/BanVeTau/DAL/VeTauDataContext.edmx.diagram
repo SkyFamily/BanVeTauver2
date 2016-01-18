@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ba2bf26a79214d38a6beb082ec0d7626" Name="Diagram1" ZoomLevel="71">
+        <EntityTypeShape EntityType="VeTauModel.ChiTietGiaoDich" Width="1.5" PointX="7.5" PointY="1.125" />
+        <EntityTypeShape EntityType="VeTauModel.DoanTau" Width="1.5" PointX="0.75" PointY="5.375" />
+        <EntityTypeShape EntityType="VeTauModel.DoanTau_LoaiGhe" Width="1.5" PointX="7.5" PointY="10.875" />
+        <EntityTypeShape EntityType="VeTauModel.GaTau" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="VeTauModel.GiaoDich" Width="1.5" PointX="5.25" PointY="11.375" />
+        <EntityTypeShape EntityType="VeTauModel.KhachHang" Width="1.5" PointX="3" PointY="13.75" />
+        <EntityTypeShape EntityType="VeTauModel.LichTrinh" Width="1.5" PointX="3" PointY="5.125" />
+        <EntityTypeShape EntityType="VeTauModel.LichTrinh_TuyenDuong" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="VeTauModel.LoaiGhe" Width="1.5" PointX="5.25" PointY="16.25" />
+        <EntityTypeShape EntityType="VeTauModel.LoaiKhachHang" Width="1.5" PointX="0.75" PointY="14.25" />
+        <EntityTypeShape EntityType="VeTauModel.NhanVien" Width="1.5" PointX="3" PointY="9.5" />
+        <EntityTypeShape EntityType="VeTauModel.PhongBan" Width="1.5" PointX="0.75" PointY="9.875" />
+        <EntityTypeShape EntityType="VeTauModel.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" />
+        <EntityTypeShape EntityType="VeTauModel.TuyenDuong" Width="1.5" PointX="3" PointY="1.25" />
+        <AssociationConnector Association="VeTauModel.FK_ChiTietGiaoDich_GiaoDich" />
+        <AssociationConnector Association="VeTauModel.FK_ChiTietGiaoDich_LichTrinh_TuyenDuong" />
+        <AssociationConnector Association="VeTauModel.FK_ChiTietGiaoDich_LoaiGhe" />
+        <AssociationConnector Association="VeTauModel.FK_DoanTau_LoaiGhe_DoanTau" />
+        <AssociationConnector Association="VeTauModel.FK_LichTrinh_DoanTau" />
+        <AssociationConnector Association="VeTauModel.FK_DoanTau_LoaiGhe_LoaiGhe" />
+        <AssociationConnector Association="VeTauModel.FK_TuyenDuong_GaTau" />
+        <AssociationConnector Association="VeTauModel.FK_TuyenDuong_GaTau1" />
+        <AssociationConnector Association="VeTauModel.FK_GiaoDich_KhachHang" />
+        <AssociationConnector Association="VeTauModel.FK_GiaoDich_NhanVien" />
+        <AssociationConnector Association="VeTauModel.FK_KhachHang_LoaiKhachHang" />
+        <AssociationConnector Association="VeTauModel.FK_LichTrinh_TuyenDuong_LichTrinh1" />
+        <AssociationConnector Association="VeTauModel.FK_LichTrinh_TuyenDuong_TuyenDuong" />
+        <AssociationConnector Association="VeTauModel.FK_NhanVien_PhongBan" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4484B140-F09F-4D0F-8194-6A6E8852CAF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BanVeTau</RootNamespace>
+    <AssemblyName>BanVeTau</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2.UI, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Extensions, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\BaoCaoDal.cs" />
+    <Compile Include="DAL\ChiTietGiaoDich.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DoanTau.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DoanTauDal.cs" />
+    <Compile Include="DAL\DoanTauGheDal.cs" />
+    <Compile Include="DAL\DoanTau_LoaiGhe.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GaTau.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ChiTietGiaoDichDal.cs" />
+    <Compile Include="DAL\GiaoDich.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GiaoDichDal.cs" />
+    <Compile Include="DAL\KhachHang.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\KhachHangDal.cs" />
+    <Compile Include="DAL\LichTrinh.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\LichTrinhDal.cs" />
+    <Compile Include="DAL\LichTrinhTuyenDuongDal.cs" />
+    <Compile Include="DAL\LichTrinh_TuyenDuong.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\LoaiGhe.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\LoaiGheDal.cs" />
+    <Compile Include="DAL\LoaiKhachHang.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\GaTauDal.cs" />
+    <Compile Include="DAL\LoaiKhachHangDal.cs" />
+    <Compile Include="DAL\NhanVien.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\NhanVienDal.cs" />
+    <Compile Include="DAL\PhongBan.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PhongBanDal.cs" />
+    <Compile Include="DAL\sysdiagram.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TuyenDuong.cs">
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\TuyenDuongDal.cs" />
+    <Compile Include="DAL\VeTauDataContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeTauDataContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\VeTauDataContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeTauDataContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\VeTauDataContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeTauDataContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FCapNhatThongTinVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FCapNhatThongTinVe.Designer.cs">
+      <DependentUpon>FCapNhatThongTinVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FChinh.Designer.cs">
+      <DependentUpon>FChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FDangNhap.Designer.cs">
+      <DependentUpon>FDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FInputField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FInputField.Designer.cs">
+      <DependentUpon>FInputField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FTaoKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FTaoKhachHang.Designer.cs">
+      <DependentUpon>FTaoKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FTaoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FTaoNhanVien.Designer.cs">
+      <DependentUpon>FTaoNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCBanVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCBanVe.Designer.cs">
+      <DependentUpon>UCBanVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcBaoCaoDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcBaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>UcBaoCaoDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcBaoCaoGiaoDichTC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcBaoCaoGiaoDichTC.Designer.cs">
+      <DependentUpon>UcBaoCaoGiaoDichTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcBaoCaoGiaoDichTB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcBaoCaoGiaoDichTB.Designer.cs">
+      <DependentUpon>UcBaoCaoGiaoDichTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcBaoCaoGiaVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcBaoCaoGiaVe.Designer.cs">
+      <DependentUpon>UcBaoCaoGiaVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcCapNhatLichTrinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcCapNhatLichTrinh.Designer.cs">
+      <DependentUpon>UcCapNhatLichTrinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCChiTietLichTrinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCChiTietLichTrinh.Designer.cs">
+      <DependentUpon>UCChiTietLichTrinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCDoanTau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCDoanTau.Designer.cs">
+      <DependentUpon>UCDoanTau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCGaTau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCGaTau.Designer.cs">
+      <DependentUpon>UCGaTau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCGhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCGhe.Designer.cs">
+      <DependentUpon>UCGhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcKhachHang.Designer.cs">
+      <DependentUpon>UcKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCLichTrinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCLichTrinh.Designer.cs">
+      <DependentUpon>UCLichTrinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCLoaiGhe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCLoaiGhe.Designer.cs">
+      <DependentUpon>UCLoaiGhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcLoaiKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcLoaiKhachHang.Designer.cs">
+      <DependentUpon>UcLoaiKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcNhanVien.Designer.cs">
+      <DependentUpon>UcNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UCPhongBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UCPhongBan.Designer.cs">
+      <DependentUpon>UCPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcRNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcRNhanVien.Designer.cs">
+      <DependentUpon>UcRNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcTraVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcTraVe.Designer.cs">
+      <DependentUpon>UcTraVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UcTuyenDuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UcTuyenDuong.Designer.cs">
+      <DependentUpon>UcTuyenDuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GaTauModel1.cs" />
+    <Compile Include="Models\GheModel.cs" />
+    <Compile Include="Models\LichTrinhModel.cs" />
+    <Compile Include="Models\LichTrinhTuyenDuongModelcs.cs" />
+    <Compile Include="Models\MessageType.cs" />
+    <Compile Include="Models\RPGiaoDich.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\VeTauDataSet.cs">
+      <DependentUpon>VeTauDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\MyUtil.cs" />
+    <Compile Include="Report\VeTauDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VeTauDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\FCapNhatThongTinVe.resx">
+      <DependentUpon>FCapNhatThongTinVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FChinh.resx">
+      <DependentUpon>FChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FDangNhap.resx">
+      <DependentUpon>FDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FInputField.resx">
+      <DependentUpon>FInputField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FTaoKhachHang.resx">
+      <DependentUpon>FTaoKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FTaoNhanVien.resx">
+      <DependentUpon>FTaoNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportDoanhThu.rdlc" />
+    <EmbeddedResource Include="GUI\UcBaoCaoGiaoDichTB.resx">
+      <DependentUpon>UcBaoCaoGiaoDichTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportGDich.rdlc" />
+    <EmbeddedResource Include="Report\ReportGiaVe.rdlc" />
+    <EmbeddedResource Include="GUI\UCBanVe.resx">
+      <DependentUpon>UCBanVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcBaoCaoDoanhThu.resx">
+      <DependentUpon>UcBaoCaoDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcBaoCaoGiaoDichTC.resx">
+      <DependentUpon>UcBaoCaoGiaoDichTC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcBaoCaoGiaVe.resx">
+      <DependentUpon>UcBaoCaoGiaVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcCapNhatLichTrinh.resx">
+      <DependentUpon>UcCapNhatLichTrinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCChiTietLichTrinh.resx">
+      <DependentUpon>UCChiTietLichTrinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCDoanTau.resx">
+      <DependentUpon>UCDoanTau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCGaTau.resx">
+      <DependentUpon>UCGaTau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCGhe.resx">
+      <DependentUpon>UCGhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcKhachHang.resx">
+      <DependentUpon>UcKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCLichTrinh.resx">
+      <DependentUpon>UCLichTrinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCLoaiGhe.resx">
+      <DependentUpon>UCLoaiGhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcLoaiKhachHang.resx">
+      <DependentUpon>UcLoaiKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcNhanVien.resx">
+      <DependentUpon>UcNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UCPhongBan.resx">
+      <DependentUpon>UCPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcRNhanVien.resx">
+      <DependentUpon>UcRNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcTraVe.resx">
+      <DependentUpon>UcTraVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UcTuyenDuong.resx">
+      <DependentUpon>UcTuyenDuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="DAL\VeTauDataContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VeTauDataContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DAL\VeTauDataContext.edmx.diagram">
+      <DependentUpon>VeTauDataContext.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BanVeTau.DAL.GiaoDichDal.datasource" />
+    <None Include="Properties\DataSources\BanVeTau.DAL.KhachHang.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Report\VeTauDataSet.xsc">
+      <DependentUpon>VeTauDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\VeTauDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VeTauDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\VeTauDataSet.xss">
+      <DependentUpon>VeTauDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\VeTauDataContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VeTauDataContext.edmx</DependentUpon>
+      <LastGenOutput>VeTauDataContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DAL\VeTauDataContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VeTauDataContext.edmx</DependentUpon>
+      <LastGenOutput>VeTauDataContext.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\quit_exit-512.png" />
+    <None Include="Resources\logout-512.png" />
+    <Content Include="ScriptDatabase\scriptCreateDatabase.sql" />
+    <None Include="Resources\1434477060_ticket.png" />
+    <None Include="Resources\ticket.png" />
+    <None Include="Resources\1434476717_tickets.png" />
+    <None Include="Resources\chair1.png" />
+    <None Include="Resources\chair0.png" />
+    <None Include="Resources\bed1.png" />
+    <None Include="Resources\bed0.png" />
+    <None Include="Resources\no-image-available.jpg" />
+    <None Include="Resources\1433797291_Plus.png" />
+    <None Include="Resources\1433783121_train.png" />
+    <None Include="Resources\1433782846_8.png" />
+    <None Include="Resources\1433781820_train.png" />
+    <None Include="Resources\1433781547_point_arrow_point.png" />
+    <None Include="Resources\notes_32x32.png" />
+    <None Include="Resources\create-ticket-icon16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

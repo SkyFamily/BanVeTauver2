@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="no-image-available" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no-image-available.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thatBai" xml:space="preserve">
+    <value> thất bại </value>
+  </data>
+  <data name="ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khongChinhXac" xml:space="preserve">
+    <value> không chính xác </value>
+  </data>
+  <data name="chair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chair1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoiTuongDaTonTai" xml:space="preserve">
+    <value>Đối tượng đã tồn tại</value>
+  </data>
+  <data name="1433781547_point_arrow_point" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1433781547_point_arrow_point.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MNhapLieuSai" xml:space="preserve">
+    <value>Nhập liệu sai </value>
+  </data>
+  <data name="LichTrinhThoiGianGioDenXungDot" xml:space="preserve">
+    <value>Thời gian giờ đến có xung đột thời gian với lịch trình </value>
+  </data>
+  <data name="1434477060_ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1434477060_ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GiaTriNhapKhongHopLe" xml:space="preserve">
+    <value>Giá trị nhập không hợp lệ</value>
+  </data>
+  <data name="bed0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bed0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notes_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notes_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="create-ticket-icon16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\create-ticket-icon16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1433782846_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1433782846_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thanhCong" xml:space="preserve">
+    <value> thành công </value>
+  </data>
+  <data name="XoaDoiTuong" xml:space="preserve">
+    <value>Xoá đối tượng </value>
+  </data>
+  <data name="TenDangNhap" xml:space="preserve">
+    <value>Tên đăng nhập </value>
+  </data>
+  <data name="1433783121_train" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1433783121_train.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KhongDeTrong" xml:space="preserve">
+    <value>Tên nhà ga  không được để trống.</value>
+  </data>
+  <data name="itHon" xml:space="preserve">
+    <value> ít hơn </value>
+  </data>
+  <data name="KhongTonTaiTuyenDuong" xml:space="preserve">
+    <value>Không tồn tại bất kì tuyến đường nào</value>
+  </data>
+  <data name="LuuDoiTuong" xml:space="preserve">
+    <value>Lưu đối tượng </value>
+  </data>
+  <data name="kyTu" xml:space="preserve">
+    <value> ký tự </value>
+  </data>
+  <data name="LichTrinhThoiGianGioDiXungDot" xml:space="preserve">
+    <value>Thời gian giờ đi có xung đột thời gian với lịch trình </value>
+  </data>
+  <data name="MCanhBao" xml:space="preserve">
+    <value>Cảnh báo </value>
+  </data>
+  <data name="CapNhat" xml:space="preserve">
+    <value>Cập nhật </value>
+  </data>
+  <data name="quit_exit-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quit_exit-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chair0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chair0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="khongTheSua" xml:space="preserve">
+    <value> không thể sửa. </value>
+  </data>
+  <data name="MaDoiTuong" xml:space="preserve">
+    <value>Mã đối tượng </value>
+  </data>
+  <data name="MThanhCong" xml:space="preserve">
+    <value>Thành công </value>
+  </data>
+  <data name="1433797291_Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1433797291_Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nhieuHon" xml:space="preserve">
+    <value> nhiều hơn </value>
+  </data>
+  <data name="MXacNhan" xml:space="preserve">
+    <value>Xác nhận </value>
+  </data>
+  <data name="MaPhongBan" xml:space="preserve">
+    <value>Mã phòng ban </value>
+  </data>
+  <data name="BanChuaChonGheDeDatVe" xml:space="preserve">
+    <value>Bạn chưa chọn ghế ngồi</value>
+  </data>
+  <data name="TaiKhoan" xml:space="preserve">
+    <value>Tài khoản </value>
+  </data>
+  <data name="doiTuong" xml:space="preserve">
+    <value> đối tượng </value>
+  </data>
+  <data name="daTonTai" xml:space="preserve">
+    <value> đã tồn tại </value>
+  </data>
+  <data name="MatKhauNhapLai" xml:space="preserve">
+    <value>Mật khẩu nhập lại </value>
+  </data>
+  <data name="1434476717_tickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1434476717_tickets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaoDoiTuong" xml:space="preserve">
+    <value>Tạo đối tượng </value>
+  </data>
+  <data name="ChuaNhapDuCacTruongBatBuoc" xml:space="preserve">
+    <value>Chưa nhập đủ các trường bắt buộc </value>
+  </data>
+  <data name="MLoi" xml:space="preserve">
+    <value>Lỗi </value>
+  </data>
+  <data name="MThatBai" xml:space="preserve">
+    <value>Thất bại </value>
+  </data>
+  <data name="logout-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaKH" xml:space="preserve">
+    <value>Nhập mã khách hàng</value>
+  </data>
+  <data name="MaNV" xml:space="preserve">
+    <value>Nhập mã nhân viên</value>
+  </data>
+</root>

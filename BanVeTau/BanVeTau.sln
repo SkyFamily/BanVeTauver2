@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanVeTau", "BanVeTau\BanVeTau.csproj", "{4484B140-F09F-4D0F-8194-6A6E8852CAF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4484B140-F09F-4D0F-8194-6A6E8852CAF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4484B140-F09F-4D0F-8194-6A6E8852CAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4484B140-F09F-4D0F-8194-6A6E8852CAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4484B140-F09F-4D0F-8194-6A6E8852CAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ltvkhanh1994.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BanVeTau\\BanVeTau.csproj
+		SccProjectName1 = BanVeTau
+		SccLocalPath1 = BanVeTau
+	EndGlobalSection
+EndGlobal
