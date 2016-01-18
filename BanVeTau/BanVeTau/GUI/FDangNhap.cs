@@ -51,7 +51,7 @@ namespace BanVeTau
                 }
                 else
                 {
-                    MessageBox.Show("Đăng nhập thất bại \nTài khoản không chính xác hoặc chưa kích hoặt", Resources.MThatBai);
+                    MessageBox.Show(Resources.TaiKhoan + Resources.khongChinhXac, Resources.MNhapLieuSai, MessageBoxButtons.OK);
                 }
             }
             else

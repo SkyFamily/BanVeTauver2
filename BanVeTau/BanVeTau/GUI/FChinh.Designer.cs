@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FChinh));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip16 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem16 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip17 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem17 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip18 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem18 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnPhongBan = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -86,6 +86,7 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+           
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.panelMain.SuspendLayout();
@@ -122,7 +123,7 @@
             this.btnThoat,
             this.btnDangXuat});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 3;
+            this.ribbonControl.MaxItemId = 7;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -334,9 +335,9 @@
             this.btnThoat.Id = 1;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem1.Text = "Thoát";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.btnThoat.SuperTip = superToolTip1;
+            toolTipTitleItem16.Text = "Thoát";
+            superToolTip16.Items.Add(toolTipTitleItem16);
+            this.btnThoat.SuperTip = superToolTip16;
             this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
             // 
             // btnDangXuat
@@ -346,9 +347,9 @@
             this.btnDangXuat.Id = 2;
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem2.Text = "Đăng xuất";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.btnDangXuat.SuperTip = superToolTip2;
+            toolTipTitleItem17.Text = "Đăng xuất";
+            superToolTip17.Items.Add(toolTipTitleItem17);
+            this.btnDangXuat.SuperTip = superToolTip17;
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
             // ribbonPage1
@@ -369,9 +370,9 @@
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnNhanVien);
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnLoaiKhachHang);
             this.ribbonPageGroupNhanVien.Name = "ribbonPageGroupNhanVien";
-            toolTipTitleItem3.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
-            superToolTip3.Items.Add(toolTipTitleItem3);
-            this.ribbonPageGroupNhanVien.SuperTip = superToolTip3;
+            toolTipTitleItem18.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
+            superToolTip18.Items.Add(toolTipTitleItem18);
+            this.ribbonPageGroupNhanVien.SuperTip = superToolTip18;
             this.ribbonPageGroupNhanVien.Text = "Nhân sự";
             // 
             // ribbonPageGroupKhachHang
@@ -488,7 +489,6 @@
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.barStatusUser);
-            this.ribbonStatusBar1.ItemLinks.Add(this.barListItem1);
             this.ribbonStatusBar1.ItemLinks.Add(this.barDateTime);
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 710);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
@@ -551,6 +551,10 @@
             this.barButtonItem1.Id = 14;
             this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
             this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barStaticItem1
+            // 
+            
             // 
             // FChinh
             // 
@@ -625,5 +629,6 @@
         private DevExpress.XtraBars.BarButtonItem btnDangXuat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        
     }
 }

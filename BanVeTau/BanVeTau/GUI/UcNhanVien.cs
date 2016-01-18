@@ -15,9 +15,11 @@ namespace BanVeTau.GUI
 {
     public partial class UcNhanVien : UserControl
     {
-        public UcNhanVien()
+        public string UserId { get; }
+        public UcNhanVien(string userId)
         {
             InitializeComponent();
+            UserId = userId;
         }
 
         private void UcNhanVien_Load(object sender, EventArgs e)
@@ -167,6 +169,32 @@ namespace BanVeTau.GUI
         private void btnXem_Click(object sender, EventArgs e)
         {
             CapNhatGridView();
+        }
+
+        private void btn_Delete_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            var id = gridView.GetFocusedRowCellValue("Id").ToString();
+           // var role = gridView.GetFocusedRowCellValue("PhongBanID").ToString();
+            var nv = NhanVienDal.LayNhanVien(UserId).PhongBanID;
+            if (nv.Equals("ADMIN"))
+            {
+                if (!string.IsNullOrEmpty(id))
+                {
+                    if (NhanVienDal.Xoa(id) > 0)
+                    {
+                        CapNhatGridView();
+                        MessageBox.Show(Resources.XoaDoiTuong + Resources.thanhCong, Resources.MThanhCong);
+                    }
+                    else
+                    {
+                        MessageBox.Show(Resources.XoaDoiTuong + Resources.thatBai, Resources.MThatBai);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chỉ quản trị viên mới được phép xóa", Resources.MThatBai);
+            }
         }
     }
 }

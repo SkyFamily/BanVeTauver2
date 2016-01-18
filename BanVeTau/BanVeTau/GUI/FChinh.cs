@@ -13,7 +13,7 @@ namespace BanVeTau.GUI
             InitializeComponent();
             UserId = userId;
             NhanVien = nhanVien;
-            PhanQuyen();
+            PhanQuyen();            
         }
 
         private void PhanQuyen()
@@ -57,6 +57,9 @@ namespace BanVeTau.GUI
                     ribbonPage1.Groups.Add(ribbonPageGroupHeThong);
                     ribbonPage1.Groups.Add(ribbonPageGroupChoNgoi);
                 }
+                if (phongBan.Id.Equals("ADMIN") || phongBan.Id.Equals("BH") || phongBan.Id.Equals("KT"))
+                    barStatusUser.Caption = phongBan.TenPhongBan + ": " + nv.TenNhanVien;
+                
 
             }
             else
@@ -65,9 +68,20 @@ namespace BanVeTau.GUI
                 ribbonControl.Pages.Remove(ribbonPage2);
                 ribbonControl.Pages.Remove(ribbonPage3);
                 ribbonControl.Pages.Add(ribbonPage4);
+
+                var kh = KhachHangDal.LayKhachHang(UserId);
+                var loaiKh = LoaiKhachHangDal.Lay(kh.LoaiKhachHangId);
+                barStatusUser.Caption = loaiKh.Ten + ": "+ kh.TenKhachHang;
             }
         }
 
+        private void statusBar()
+        {
+            if(NhanVien)
+                ribbonStatusBar1.ItemLinks[0].Caption = "Nhân viên";
+            else
+                ribbonStatusBar1.ItemLinks[0].Caption = "Khách hàng";
+        }
 
         private void btnPhongBan_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -163,7 +177,7 @@ namespace BanVeTau.GUI
         private void btnNhanVien_ItemClick(object sender, ItemClickEventArgs e)
         {
             panelMain.Controls.Clear();
-            var ucNhanVien = new UcNhanVien();
+            var ucNhanVien = new UcNhanVien(UserId);
             panelMain.Controls.Add(ucNhanVien);
         }
 

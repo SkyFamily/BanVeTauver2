@@ -100,5 +100,19 @@ namespace BanVeTau.DAL
                 return context.SaveChanges();
             }
         }
+        public static int Xoa(string id)
+        {
+            using (var context = new VeTauEntities(false))
+            {
+                var doiTuong = context.NhanViens.SingleOrDefault(nv => nv.Id == id);
+
+                if (doiTuong != null)
+                {
+                    context.NhanViens.Remove(doiTuong);
+                }
+
+                return context.SaveChanges();
+            }
+        }
     }
 }

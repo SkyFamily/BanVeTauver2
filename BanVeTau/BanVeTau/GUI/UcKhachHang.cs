@@ -29,6 +29,7 @@ namespace BanVeTau.GUI
             cbLoaiKhachHang.DataSource = dataLoaiKhachHang;
             cbLoaiKhachHang.DisplayMember = "Ten";
             cbLoaiKhachHang.ValueMember = "Id";
+            cbLoaiKhachHang.SelectedIndex = -1;
 
             var loaiKhachHang1 = dataLoaiKhachHang.ToList();
             loaiKhachHang1.Insert(0, new LoaiKhachHang { Id = 0, Ten = "Tất cả" });
@@ -50,7 +51,8 @@ namespace BanVeTau.GUI
             if(cbLoaiKhachHang1.SelectedIndex<0)
                 return;
 
-            gvExtra.DataSource = KhachHangDal.LayTatCa(cbLoaiKhachHang1.SelectedValue as int? ?? 0);
+            int tempLoaiKh = Convert.ToInt16(cbLoaiKhachHang1.SelectedValue);
+            gvExtra.DataSource = KhachHangDal.LayTatCa(tempLoaiKh);
             gvExtra.RefreshDataSource();
         }
 
@@ -62,8 +64,8 @@ namespace BanVeTau.GUI
             {
                 if (KhachHangDal.Xoa(id) > 0)
                 {
-                    MessageBox.Show(Resources.XoaDoiTuong + Resources.thanhCong, Resources.MThanhCong);
                     CapNhatGridView();
+                    MessageBox.Show(Resources.XoaDoiTuong + Resources.thanhCong, Resources.MThanhCong);                    
                 }
                 else
                 {
@@ -88,12 +90,12 @@ namespace BanVeTau.GUI
                 };
                 if (KhachHangDal.TaoKhachHang(khachHangMoi))
                 {
-                    MessageBox.Show(Resources.TaoDoiTuong + Resources.thanhCong + Resources.MThanhCong);
                     btnLamMoi_Click(null, null);
+                    MessageBox.Show(Resources.TaoDoiTuong + Resources.thanhCong , Resources.MThanhCong);                    
                 }
                 else
                 {
-                    MessageBox.Show(Resources.TaoDoiTuong + Resources.thatBai + Resources.MThatBai);
+                    MessageBox.Show(Resources.TaoDoiTuong + Resources.thatBai , Resources.MThatBai);
                 }
 
             }
