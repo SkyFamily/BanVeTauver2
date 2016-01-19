@@ -42,7 +42,7 @@ namespace BanVeTau.GUI
             reGridPhongBan.ValueMember = "Id";
             reGridPhongBan.DisplayMember = "TenPhongBan";
 
-            tbId.Text = NhanVienDal.LayIdTuDong("NV", 4);
+            //tbId.Text = NhanVienDal.LayIdTuDong("NV", 4);
             dtNgaySinh.MaxDate = DateTime.Now.AddYears(-18);
 
             cbPhongBan.SelectedIndex = -1;
@@ -150,7 +150,7 @@ namespace BanVeTau.GUI
             tbMatKhau1.Text = string.Empty;
             tbMatKhau.Text = string.Empty;
             twGioTinh.IsOn = true;
-            tbId.Text = NhanVienDal.LayIdTuDong("NV", 4);
+            //tbId.Text = NhanVienDal.LayIdTuDong("NV", 4);
             cbPhongBan.SelectedIndex = -1;
             CapNhatGridView();
         }
@@ -207,6 +207,11 @@ namespace BanVeTau.GUI
             {
                 MessageBox.Show("Chỉ quản trị viên mới được phép xóa", Resources.MThatBai);
             }
+        }
+
+        private void cbPhongBan_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            tbId.Text = NhanVienDal.LayIdTuDong(cbPhongBan.SelectedValue.ToString(), ChieuDaiId);
         }
     }
 }

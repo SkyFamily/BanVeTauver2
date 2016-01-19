@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcNhanVien));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             this.cbPhongBan = new System.Windows.Forms.ComboBox();
             this.cbPhongBan1 = new System.Windows.Forms.ComboBox();
             this.tbMatKhau1 = new System.Windows.Forms.TextBox();
@@ -92,6 +92,7 @@
             this.cbPhongBan.Name = "cbPhongBan";
             this.cbPhongBan.Size = new System.Drawing.Size(172, 21);
             this.cbPhongBan.TabIndex = 4;
+            this.cbPhongBan.SelectionChangeCommitted += new System.EventHandler(this.cbPhongBan_SelectionChangeCommitted);
             // 
             // cbPhongBan1
             // 
@@ -289,6 +290,7 @@
             this.gridColumn1.Caption = "Mã nhân viên";
             this.gridColumn1.FieldName = "Id";
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.ReadOnly = true;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
             this.gridColumn1.Width = 94;
@@ -392,7 +394,7 @@
             // 
             this.btn_Delete.AutoHeight = false;
             this.btn_Delete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("btn_Delete.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("btn_Delete.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btn_Delete.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btn_Delete_ButtonClick);
