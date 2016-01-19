@@ -60,7 +60,7 @@ namespace BanVeTau.GUI
         {
             var id = gridView.GetFocusedRowCellValue("Id").ToString();
 
-            if (!string.IsNullOrEmpty(id))
+            if (!string.IsNullOrEmpty(id) && DialogResult.Yes == MessageBox.Show("Bạn muốn xoá đối tượng này", Resources.MCanhBao, MessageBoxButtons.YesNo))
             {
                 if (KhachHangDal.Xoa(id) > 0)
                 {

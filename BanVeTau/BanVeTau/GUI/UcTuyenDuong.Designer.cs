@@ -274,7 +274,7 @@
             0,
             0,
             0});
-            this.numKhoangCach.Location = new System.Drawing.Point(525, 17);
+            this.numKhoangCach.Location = new System.Drawing.Point(552, 16);
             this.numKhoangCach.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -286,7 +286,7 @@
             0,
             0});
             this.numKhoangCach.Name = "numKhoangCach";
-            this.numKhoangCach.Size = new System.Drawing.Size(74, 20);
+            this.numKhoangCach.Size = new System.Drawing.Size(56, 20);
             this.numKhoangCach.TabIndex = 2;
             this.numKhoangCach.Value = new decimal(new int[] {
             100,
@@ -315,7 +315,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(605, 23);
+            this.label4.Location = new System.Drawing.Point(614, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(21, 13);
             this.label4.TabIndex = 0;
@@ -326,9 +326,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(475, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(71, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Ga cuối";
+            this.label3.Text = "Khoảng cách";
             // 
             // UcTuyenDuong
             // 

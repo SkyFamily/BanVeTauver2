@@ -78,7 +78,7 @@ namespace BanVeTau.GUI
 
                 ListViewItem item = new ListViewItem();
                 item.Text = listLoaiGhe[i].Ten +"["+listLoaiGhe[i].HeSo.ToString("F1")+"]";
-                item.ImageKey = listLoaiGhe[i].Id.ToString();
+                item.ImageKey = listLoaiGhe[i].Id.ToString();                
                 listViewLoaiGhe.Items.Add(item);
             }
             
@@ -114,8 +114,9 @@ namespace BanVeTau.GUI
             {
                 if (LoaiGheDal.XoaLoaiGhe(int.Parse(listViewLoaiGhe.SelectedItems[0].ImageKey)) > 0)
                 {
-                    MessageBox.Show(Resources.XoaDoiTuong + Resources.thanhCong, Resources.MThanhCong);
                     CapNhatGv();
+                    MessageBox.Show(Resources.XoaDoiTuong + Resources.thanhCong, Resources.MThanhCong);
+                    
                 }
                 else
                 {

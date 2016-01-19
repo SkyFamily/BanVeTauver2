@@ -36,7 +36,7 @@ namespace BanVeTau.GUI
         {
             var id = gvPhongBan.GetFocusedRowCellValue("Id").ToString();
 
-            if (!string.IsNullOrEmpty(id))
+            if (!string.IsNullOrEmpty(id) && DialogResult.Yes == MessageBox.Show("Bạn muốn xoá đối tượng này", Resources.MCanhBao, MessageBoxButtons.YesNo))
             {
                 if (PhongBanDal.XoaPhongBan(id) > 0)
                 {

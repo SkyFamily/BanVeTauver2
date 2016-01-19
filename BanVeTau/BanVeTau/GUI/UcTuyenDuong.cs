@@ -155,5 +155,7 @@ namespace BanVeTau.GUI
             cbGaCuoi.SelectedIndex = -1;
             CapNhatGv();
         }
+
+       
     }
 }

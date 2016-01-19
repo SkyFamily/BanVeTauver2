@@ -35,7 +35,9 @@ namespace BanVeTau.GUI
                 var phongBan = PhongBanDal.LayPhongBan(nv.PhongBanID);
                 if (phongBan.RuleBaoCao)
                 {
-                    ribbonControl.Pages.Add(ribbonPage3);                   
+                    ribbonControl.Pages.Add(ribbonPage3);     
+                    if(phongBan.Id != "ADMIN")
+                        ribbonControl.Pages.Remove(ribbonPage2);
                 }
                 if (phongBan.RuletBanVe)
                 {
@@ -45,7 +47,12 @@ namespace BanVeTau.GUI
                 if (phongBan.RuleNhanSu)
                 {
                     ribbonPage1.Groups.Add(ribbonPageGroupKhachHang);
-                    ribbonPage1.Groups.Add(ribbonPageGroupNhanVien);                    
+                    ribbonPage1.Groups.Add(ribbonPageGroupNhanVien);
+                    if (phongBan.Id != "ADMIN")
+                    {
+                        ribbonControl.Pages.Remove(ribbonPage2);
+                        btnPhongBan.Enabled = false;
+                    }            
                 }
                 if (phongBan.RuleChuyenTau)
                 {
@@ -57,7 +64,7 @@ namespace BanVeTau.GUI
                     ribbonPage1.Groups.Add(ribbonPageGroupHeThong);
                     ribbonPage1.Groups.Add(ribbonPageGroupChoNgoi);
                 }
-                if (phongBan.Id.Equals("ADMIN") || phongBan.Id.Equals("BH") || phongBan.Id.Equals("KT"))
+                if (phongBan.Id.Equals("ADMIN") || phongBan.Id.Equals("BH") || phongBan.Id.Equals("KT") || phongBan.Id.Equals("NS"))
                     barStatusUser.Caption = phongBan.TenPhongBan + ": " + nv.TenNhanVien;
                 
 
