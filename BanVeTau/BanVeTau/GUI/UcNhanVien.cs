@@ -79,8 +79,9 @@ namespace BanVeTau.GUI
 
                 if (NhanVienDal.TaoNhanVien(nhanVienMoi))
                 {
-                    MessageBox.Show(Resources.TaoDoiTuong + Resources.thanhCong + Resources.MThanhCong);
                     btnLamMoi_Click(null, null);
+                    MessageBox.Show(Resources.TaoDoiTuong + Resources.thanhCong + Resources.MThanhCong);
+                    
                 }
                 else
                 {
@@ -102,7 +103,13 @@ namespace BanVeTau.GUI
                 MessageBox.Show(Resources.MaDoiTuong + Resources.daTonTai, Resources.MNhapLieuSai);
                 return false;
             }
-
+            var nv = NhanVienDal.LayNhanVien(UserId).PhongBanID;
+            string str = Convert.ToString(cbPhongBan.SelectedValue);
+            if (str == "ADMIN" && nv != "ADMIN")
+            {
+                MessageBox.Show("Chỉ Admin mới được thêm Quản trị viên", Resources.MNhapLieuSai);
+                return false;
+            }
             return true;
         }
 
@@ -174,8 +181,13 @@ namespace BanVeTau.GUI
         private void btn_Delete_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             var id = gridView.GetFocusedRowCellValue("Id").ToString();
-           // var role = gridView.GetFocusedRowCellValue("PhongBanID").ToString();
+            var role = gridView.GetFocusedRowCellValue("PhongBanID").ToString();
             var nv = NhanVienDal.LayNhanVien(UserId).PhongBanID;
+            if (role.Equals("ADMIN"))
+            {
+                MessageBox.Show("Không được xóa Admin", Resources.MThatBai);
+                return;
+            }
             if (nv.Equals("ADMIN"))
             {
                 if (!string.IsNullOrEmpty(id))

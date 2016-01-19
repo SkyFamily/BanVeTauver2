@@ -14,6 +14,7 @@ namespace BanVeTau.GUI
 {
     public partial class UCDoanTau : UserControl
     {
+        readonly int ChieuDaiId = 4;
         public UCDoanTau()
         {
             InitializeComponent();
@@ -31,6 +32,7 @@ namespace BanVeTau.GUI
                 gridColumnXoa.Visible = false;
                 gridView.OptionsBehavior.Editable = false;
             }
+            tbMa.Text = DoanTauDal.LayIdTuDong("SE",ChieuDaiId);
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -47,8 +49,8 @@ namespace BanVeTau.GUI
             {
                 if (DoanTauDal.ThemDoanTau(doanTau) > 0)
                 {
-                    MessageBox.Show(Resources.TaoDoiTuong + Resources.thanhCong, Resources.MThanhCong);
-                    CapNhatGv();
+                    btnLamMoi_Click(null,null);
+                    MessageBox.Show(Resources.TaoDoiTuong + Resources.thanhCong, Resources.MThanhCong);                    
                 }
                 else
                 {
@@ -68,7 +70,7 @@ namespace BanVeTau.GUI
         {
             if (doanTau.Name.Trim().Equals(string.Empty))
             {
-                MessageBox.Show(Resources.KhongDeTrong, Resources.MNhapLieuSai);
+                MessageBox.Show(Resources.KhongDeTrong1, Resources.MNhapLieuSai);
                 return false;
             }
             return true;
@@ -81,7 +83,7 @@ namespace BanVeTau.GUI
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            tbMa.Text = string.Empty;
+            tbMa.Text = DoanTauDal.LayIdTuDong("SE", ChieuDaiId);
             tbTen.Text = string.Empty;
             tbGhiChu.Text = string.Empty;
             trckTocDo.Value = 30;

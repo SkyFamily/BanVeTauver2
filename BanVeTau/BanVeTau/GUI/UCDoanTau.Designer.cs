@@ -69,6 +69,7 @@
             this.tbMa.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbMa.Location = new System.Drawing.Point(92, 16);
             this.tbMa.Name = "tbMa";
+            this.tbMa.ReadOnly = true;
             this.tbMa.Size = new System.Drawing.Size(156, 20);
             this.tbMa.TabIndex = 0;
             // 

@@ -35,7 +35,7 @@ namespace BanVeTau.GUI
                 var phongBan = PhongBanDal.LayPhongBan(nv.PhongBanID);
                 if (phongBan.RuleBaoCao)
                 {
-                    ribbonControl.Pages.Add(ribbonPage3);
+                    ribbonControl.Pages.Add(ribbonPage3);                   
                 }
                 if (phongBan.RuletBanVe)
                 {
@@ -45,7 +45,7 @@ namespace BanVeTau.GUI
                 if (phongBan.RuleNhanSu)
                 {
                     ribbonPage1.Groups.Add(ribbonPageGroupKhachHang);
-                    ribbonPage1.Groups.Add(ribbonPageGroupNhanVien);
+                    ribbonPage1.Groups.Add(ribbonPageGroupNhanVien);                    
                 }
                 if (phongBan.RuleChuyenTau)
                 {

@@ -30,18 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FChinh));
-            DevExpress.Utils.SuperToolTip superToolTip16 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem16 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip17 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem17 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip18 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem18 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnPhongBan = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barStatusUser = new DevExpress.XtraBars.BarHeaderItem();
             this.barListItem1 = new DevExpress.XtraBars.BarListItem();
-            this.barDateTime = new DevExpress.XtraBars.BarListItem();
             this.btnNhanVien = new DevExpress.XtraBars.BarButtonItem();
             this.btnLoaiKhachHang = new DevExpress.XtraBars.BarButtonItem();
             this.btnNhanSu = new DevExpress.XtraBars.BarButtonItem();
@@ -86,10 +85,11 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-           
+            this.repositoryItemTimeSpanEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeSpanEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -101,7 +101,6 @@
             this.barButtonItem2,
             this.barStatusUser,
             this.barListItem1,
-            this.barDateTime,
             this.btnNhanVien,
             this.btnLoaiKhachHang,
             this.btnNhanSu,
@@ -123,13 +122,15 @@
             this.btnThoat,
             this.btnDangXuat});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 7;
+            this.ribbonControl.MaxItemId = 8;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage3,
             this.ribbonPage4});
+            this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTimeSpanEdit1});
             this.ribbonControl.ShowToolbarCustomizeItem = false;
             this.ribbonControl.Size = new System.Drawing.Size(1196, 142);
             this.ribbonControl.StatusBar = this.ribbonStatusBar1;
@@ -162,13 +163,6 @@
             this.barListItem1.Caption = "barListItem1";
             this.barListItem1.Id = 6;
             this.barListItem1.Name = "barListItem1";
-            // 
-            // barDateTime
-            // 
-            this.barDateTime.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barDateTime.Caption = "barListItem2";
-            this.barDateTime.Id = 7;
-            this.barDateTime.Name = "barDateTime";
             // 
             // btnNhanVien
             // 
@@ -335,9 +329,9 @@
             this.btnThoat.Id = 1;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem16.Text = "Thoát";
-            superToolTip16.Items.Add(toolTipTitleItem16);
-            this.btnThoat.SuperTip = superToolTip16;
+            toolTipTitleItem1.Text = "Thoát";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.btnThoat.SuperTip = superToolTip1;
             this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
             // 
             // btnDangXuat
@@ -347,9 +341,9 @@
             this.btnDangXuat.Id = 2;
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem17.Text = "Đăng xuất";
-            superToolTip17.Items.Add(toolTipTitleItem17);
-            this.btnDangXuat.SuperTip = superToolTip17;
+            toolTipTitleItem2.Text = "Đăng xuất";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.btnDangXuat.SuperTip = superToolTip2;
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
             // ribbonPage1
@@ -370,9 +364,9 @@
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnNhanVien);
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnLoaiKhachHang);
             this.ribbonPageGroupNhanVien.Name = "ribbonPageGroupNhanVien";
-            toolTipTitleItem18.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
-            superToolTip18.Items.Add(toolTipTitleItem18);
-            this.ribbonPageGroupNhanVien.SuperTip = superToolTip18;
+            toolTipTitleItem3.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            this.ribbonPageGroupNhanVien.SuperTip = superToolTip3;
             this.ribbonPageGroupNhanVien.Text = "Nhân sự";
             // 
             // ribbonPageGroupKhachHang
@@ -489,7 +483,6 @@
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.barStatusUser);
-            this.ribbonStatusBar1.ItemLinks.Add(this.barDateTime);
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 710);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl;
@@ -552,9 +545,13 @@
             this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
             this.barButtonItem1.Name = "barButtonItem1";
             // 
-            // barStaticItem1
+            // repositoryItemTimeSpanEdit1
             // 
-            
+            this.repositoryItemTimeSpanEdit1.AutoHeight = false;
+            this.repositoryItemTimeSpanEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemTimeSpanEdit1.Mask.EditMask = "dd.HH:mm:ss";
+            this.repositoryItemTimeSpanEdit1.Name = "repositoryItemTimeSpanEdit1";
             // 
             // FChinh
             // 
@@ -572,6 +569,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeSpanEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -589,7 +587,6 @@
         private DevExpress.XtraBars.Docking.DockManager dockManager;
         private DevExpress.XtraBars.BarHeaderItem barStatusUser;
         private DevExpress.XtraBars.BarListItem barListItem1;
-        private DevExpress.XtraBars.BarListItem barDateTime;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private System.Windows.Forms.Panel panelMain;
         private DevExpress.XtraBars.BarButtonItem btnNhanVien;
@@ -629,6 +626,6 @@
         private DevExpress.XtraBars.BarButtonItem btnDangXuat;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        
+        private DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit repositoryItemTimeSpanEdit1;
     }
 }

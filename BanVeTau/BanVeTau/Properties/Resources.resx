@@ -268,4 +268,7 @@
   <data name="MaNV" xml:space="preserve">
     <value>Nhập mã nhân viên</value>
   </data>
+  <data name="KhongDeTrong1" xml:space="preserve">
+    <value>Tên đoàn tàu không được để trống</value>
+  </data>
 </root>

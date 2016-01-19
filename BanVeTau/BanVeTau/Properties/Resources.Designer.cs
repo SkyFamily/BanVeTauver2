@@ -261,6 +261,15 @@ namespace BanVeTau.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tên đoàn tàu không được để trống.
+        /// </summary>
+        internal static string KhongDeTrong1 {
+            get {
+                return ResourceManager.GetString("KhongDeTrong1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to  không thể sửa. .
         /// </summary>
         internal static string khongTheSua {
