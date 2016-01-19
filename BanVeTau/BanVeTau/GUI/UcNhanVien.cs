@@ -180,10 +180,10 @@ namespace BanVeTau.GUI
 
         private void btn_Delete_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
-            var id = gridView.GetFocusedRowCellValue("Id").ToString();
+            var id = gridView.GetFocusedRowCellValue("Id").ToString().ToUpper();
             var role = gridView.GetFocusedRowCellValue("PhongBanID").ToString();
             var nv = NhanVienDal.LayNhanVien(UserId).PhongBanID;
-            if (role.Equals("ADMIN"))
+            if (id.Equals("ADMIN"))
             {
                 MessageBox.Show("Không được xóa Admin", Resources.MThatBai);
                 return;
