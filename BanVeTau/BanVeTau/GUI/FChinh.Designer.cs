@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FChinh));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnPhongBan = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -78,6 +78,7 @@
             this.ribbonPageGroupXemLichTrinh = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroupQuanLyVe = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemTimeSpanEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
@@ -85,11 +86,10 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.repositoryItemTimeSpanEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeSpanEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).BeginInit();
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeSpanEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -211,7 +211,7 @@
             // 
             // btnLichTrinh
             // 
-            this.btnLichTrinh.Caption = "Lịch trình";
+            this.btnLichTrinh.Caption = "Thêm lịch trình";
             this.btnLichTrinh.Glyph = ((System.Drawing.Image)(resources.GetObject("btnLichTrinh.Glyph")));
             this.btnLichTrinh.Id = 13;
             this.btnLichTrinh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnLichTrinh.LargeGlyph")));
@@ -270,7 +270,7 @@
             // 
             // btnCapNhatLichTrinh
             // 
-            this.btnCapNhatLichTrinh.Caption = "Lịch trình";
+            this.btnCapNhatLichTrinh.Caption = "Cập nhật lịch trình";
             this.btnCapNhatLichTrinh.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatLichTrinh.Glyph")));
             this.btnCapNhatLichTrinh.Id = 20;
             this.btnCapNhatLichTrinh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnCapNhatLichTrinh.LargeGlyph")));
@@ -329,9 +329,9 @@
             this.btnThoat.Id = 1;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem1.Text = "Thoát";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.btnThoat.SuperTip = superToolTip1;
+            toolTipTitleItem4.Text = "Thoát";
+            superToolTip4.Items.Add(toolTipTitleItem4);
+            this.btnThoat.SuperTip = superToolTip4;
             this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
             // 
             // btnDangXuat
@@ -341,9 +341,9 @@
             this.btnDangXuat.Id = 2;
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem2.Text = "Đăng xuất";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.btnDangXuat.SuperTip = superToolTip2;
+            toolTipTitleItem5.Text = "Đăng xuất";
+            superToolTip5.Items.Add(toolTipTitleItem5);
+            this.btnDangXuat.SuperTip = superToolTip5;
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
             // ribbonPage1
@@ -364,9 +364,9 @@
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnNhanVien);
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnLoaiKhachHang);
             this.ribbonPageGroupNhanVien.Name = "ribbonPageGroupNhanVien";
-            toolTipTitleItem3.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
-            superToolTip3.Items.Add(toolTipTitleItem3);
-            this.ribbonPageGroupNhanVien.SuperTip = superToolTip3;
+            toolTipTitleItem6.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
+            superToolTip6.Items.Add(toolTipTitleItem6);
+            this.ribbonPageGroupNhanVien.SuperTip = superToolTip6;
             this.ribbonPageGroupNhanVien.Text = "Nhân sự";
             // 
             // ribbonPageGroupKhachHang
@@ -480,6 +480,14 @@
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Trợ giúp";
             // 
+            // repositoryItemTimeSpanEdit1
+            // 
+            this.repositoryItemTimeSpanEdit1.AutoHeight = false;
+            this.repositoryItemTimeSpanEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemTimeSpanEdit1.Mask.EditMask = "dd.HH:mm:ss";
+            this.repositoryItemTimeSpanEdit1.Name = "repositoryItemTimeSpanEdit1";
+            // 
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.barStatusUser);
@@ -545,14 +553,6 @@
             this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
             this.barButtonItem1.Name = "barButtonItem1";
             // 
-            // repositoryItemTimeSpanEdit1
-            // 
-            this.repositoryItemTimeSpanEdit1.AutoHeight = false;
-            this.repositoryItemTimeSpanEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemTimeSpanEdit1.Mask.EditMask = "dd.HH:mm:ss";
-            this.repositoryItemTimeSpanEdit1.Name = "repositoryItemTimeSpanEdit1";
-            // 
             // FChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -566,10 +566,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý tàu xe";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeSpanEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager)).EndInit();
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeSpanEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
