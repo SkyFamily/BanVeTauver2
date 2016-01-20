@@ -167,5 +167,20 @@ namespace BanVeTau.GUI
         {
             CapNhatGridView();
         }
+
+        private void tbDienThoai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbDienThoai, true, e);
+        }
+
+        private void tbCMND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbCMND, true, e);
+        }
+
+        private void tbTenKhachHang_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbTenKhachHang, false, e);
+        }
     }
 }

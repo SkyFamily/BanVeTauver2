@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-
+using System.Windows.Forms;
 
 namespace BanVeTau.Utils
 {
@@ -68,6 +68,38 @@ namespace BanVeTau.Utils
             }
 
             return destImage;
+        }
+
+        public static void KiemTraRangBuocTextBox(TextBox tb, bool so, KeyPressEventArgs e)
+        {
+            switch (so)
+            {
+                case true:
+                    if (!Char.IsNumber(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                    {
+                        e.Handled = true;
+                        MessageBox.Show("Chỉ được nhập số", "Lỗi");
+                    }
+                    break;
+                case false:
+                    if (Char.IsNumber(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                    {
+                        e.Handled = true;
+                        MessageBox.Show("Chỉ được nhập ký tự", "Lỗi");
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public static void KiemTraKyTuDacBiet(TextBox tb, KeyPressEventArgs e)
+        {
+            if (Char.IsWhiteSpace(e.KeyChar) && !Char.IsControl(e.KeyChar) || Char.IsPunctuation(e.KeyChar) || Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Không thể nhập ký tự đặc biệt", "Lỗi");
+            }
         }
     }
 }

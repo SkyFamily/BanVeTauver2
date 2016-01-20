@@ -97,5 +97,30 @@ namespace BanVeTau.GUI
         {
             tbId.Text = NhanVienDal.LayIdTuDong(cbPhongBan.SelectedValue.ToString(), ChieuDaiId);
         }
+
+        private void tbTenNhanVien_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbTenNhanVien, false, e);
+        }
+
+        private void tbCMND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbCMND, true, e);
+        }
+
+        private void tbDienThoai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbDienThoai, true, e);
+        }
+
+        private void tbMatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraKyTuDacBiet(tbMatKhau, e);
+        }
+
+        private void tbMatKhau1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraKyTuDacBiet(tbMatKhau1, e);
+        }
     }
 }

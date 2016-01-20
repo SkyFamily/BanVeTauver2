@@ -89,6 +89,7 @@
             this.tbTenNhanVien.Name = "tbTenNhanVien";
             this.tbTenNhanVien.Size = new System.Drawing.Size(273, 20);
             this.tbTenNhanVien.TabIndex = 2;
+            this.tbTenNhanVien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTenNhanVien_KeyPress);
             // 
             // label3
             // 
@@ -107,6 +108,7 @@
             this.tbCMND.Name = "tbCMND";
             this.tbCMND.Size = new System.Drawing.Size(273, 20);
             this.tbCMND.TabIndex = 3;
+            this.tbCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCMND_KeyPress);
             // 
             // label4
             // 
@@ -125,6 +127,7 @@
             this.tbDienThoai.Name = "tbDienThoai";
             this.tbDienThoai.Size = new System.Drawing.Size(273, 20);
             this.tbDienThoai.TabIndex = 6;
+            this.tbDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbDienThoai_KeyPress);
             // 
             // label5
             // 
@@ -212,6 +215,7 @@
             this.tbMatKhau.Size = new System.Drawing.Size(273, 20);
             this.tbMatKhau.TabIndex = 9;
             this.tbMatKhau.UseSystemPasswordChar = true;
+            this.tbMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMatKhau_KeyPress);
             // 
             // label9
             // 
@@ -231,6 +235,7 @@
             this.tbMatKhau1.Size = new System.Drawing.Size(273, 20);
             this.tbMatKhau1.TabIndex = 10;
             this.tbMatKhau1.UseSystemPasswordChar = true;
+            this.tbMatKhau1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMatKhau1_KeyPress);
             // 
             // label10
             // 

@@ -213,5 +213,10 @@ namespace BanVeTau.GUI
         {
             tbId.Text = NhanVienDal.LayIdTuDong(cbPhongBan.SelectedValue.ToString(), ChieuDaiId);
         }
+
+        private void tbTen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbTen, false, e);
+        }
     }
 }

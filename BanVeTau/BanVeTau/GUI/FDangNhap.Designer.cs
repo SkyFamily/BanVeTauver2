@@ -83,6 +83,7 @@
             this.tbMatKhau.Size = new System.Drawing.Size(184, 20);
             this.tbMatKhau.TabIndex = 1;
             this.tbMatKhau.UseSystemPasswordChar = true;
+            this.tbMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbMatKhau_KeyPress);
             // 
             // label2
             // 

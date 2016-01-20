@@ -98,5 +98,10 @@ namespace BanVeTau
         {
 
         }
+
+        private void tbMatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraKyTuDacBiet(tbMatKhau, e);
+        }
     }
 }

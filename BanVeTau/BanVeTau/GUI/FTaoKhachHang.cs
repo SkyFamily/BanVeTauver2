@@ -78,6 +78,16 @@ namespace BanVeTau.GUI
             tbId.Text = KhachHangDal.LayIdTuDong("KH",ChieuDaiId);
         }
 
+        private void tbMatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraKyTuDacBiet(tbMatKhau, e);
+        }
+
+        private void tbMatKhau1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraKyTuDacBiet(tbMatKhau1, e);
+        }
+
         //private int LoadId()
         //{
 
