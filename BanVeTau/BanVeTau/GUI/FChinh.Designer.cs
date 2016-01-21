@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FChinh));
-            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem10 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem11 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem12 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnPhongBan = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -245,7 +245,7 @@
             // 
             // btnTaoLichTrinh
             // 
-            this.btnTaoLichTrinh.Caption = "Tạo lịch trình";
+            this.btnTaoLichTrinh.Caption = "Xem lịch trình";
             this.btnTaoLichTrinh.Glyph = ((System.Drawing.Image)(resources.GetObject("btnTaoLichTrinh.Glyph")));
             this.btnTaoLichTrinh.Id = 17;
             this.btnTaoLichTrinh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTaoLichTrinh.LargeGlyph")));
@@ -329,9 +329,9 @@
             this.btnThoat.Id = 1;
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem4.Text = "Thoát";
-            superToolTip4.Items.Add(toolTipTitleItem4);
-            this.btnThoat.SuperTip = superToolTip4;
+            toolTipTitleItem10.Text = "Thoát";
+            superToolTip10.Items.Add(toolTipTitleItem10);
+            this.btnThoat.SuperTip = superToolTip10;
             this.btnThoat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThoat_ItemClick);
             // 
             // btnDangXuat
@@ -341,9 +341,9 @@
             this.btnDangXuat.Id = 2;
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            toolTipTitleItem5.Text = "Đăng xuất";
-            superToolTip5.Items.Add(toolTipTitleItem5);
-            this.btnDangXuat.SuperTip = superToolTip5;
+            toolTipTitleItem11.Text = "Đăng xuất";
+            superToolTip11.Items.Add(toolTipTitleItem11);
+            this.btnDangXuat.SuperTip = superToolTip11;
             this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
             // 
             // ribbonPage1
@@ -364,9 +364,9 @@
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnNhanVien);
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnLoaiKhachHang);
             this.ribbonPageGroupNhanVien.Name = "ribbonPageGroupNhanVien";
-            toolTipTitleItem6.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
-            superToolTip6.Items.Add(toolTipTitleItem6);
-            this.ribbonPageGroupNhanVien.SuperTip = superToolTip6;
+            toolTipTitleItem12.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
+            superToolTip12.Items.Add(toolTipTitleItem12);
+            this.ribbonPageGroupNhanVien.SuperTip = superToolTip12;
             this.ribbonPageGroupNhanVien.Text = "Nhân sự";
             // 
             // ribbonPageGroupKhachHang
@@ -475,6 +475,8 @@
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnDangXuat);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnThoat);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnDangXuat);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnThoat);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
