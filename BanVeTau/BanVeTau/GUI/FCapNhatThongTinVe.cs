@@ -73,7 +73,10 @@ namespace BanVeTau.GUI
             lbNhanVien.Text = NhanVienDal.LayNhanVien(NhanVienId).TenNhanVien;
             chkBiHuy.Checked = Ghe.HuyGhe;
             lbGiaVe.Text = Ghe.SoTien.ToString("C0");
-
+            //Thêm ngày khởi hành cho vé.
+            var ltr = LichTrinhDal.LayNgayKhoiHanhTheoTen(lbLichTrinh.Text);
+            lbNgayKhoiHanh.Text = ltr.GioChay.ToShortDateString();
+            lbGioChay.Text = ltr.GioChay.ToShortTimeString();
             var giaoDich = GiaoDichDal.LayGiaoDich(Ghe.GiaoDichId);
             if (giaoDich!=null)
                 tbGhiChu.Text = giaoDich.GhiChu;

@@ -66,7 +66,7 @@ namespace BanVeTau.GUI
         {
             var lichTrinh = LichTrinhDal.Lay(lichTrinhId);
 
-            if (lichTrinh.GioDen<DateTime.Now)
+            if (lichTrinh.GioDen < DateTime.Now)
             {
                 if (DialogResult.Yes == MessageBox.Show("Lịch trình này đã quá hạn, Xác nhận lịch trình này đã chạy qua", Resources.MNhapLieuSai, MessageBoxButtons.YesNoCancel))
                 {

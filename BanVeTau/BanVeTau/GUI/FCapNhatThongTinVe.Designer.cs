@@ -60,6 +60,10 @@ namespace BanVeTau.GUI
             this.label16 = new System.Windows.Forms.Label();
             this.cbKhachHang = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbNgayKhoiHanh = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbGioChay = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -100,8 +104,12 @@ namespace BanVeTau.GUI
             this.groupBox1.Controls.Add(this.lbLichTrinh);
             this.groupBox1.Controls.Add(this.lbDoanTau);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lbGioChay);
+            this.groupBox1.Controls.Add(this.lbNgayKhoiHanh);
             this.groupBox1.Controls.Add(this.lbGiaVe);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.lbNhanVien);
             this.groupBox1.Controls.Add(this.label22);
@@ -113,7 +121,7 @@ namespace BanVeTau.GUI
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(230, 238);
+            this.groupBox1.Size = new System.Drawing.Size(230, 263);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chuyến tàu";
@@ -368,11 +376,51 @@ namespace BanVeTau.GUI
             this.label15.TabIndex = 0;
             this.label15.Text = "Khách hàng";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 225);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Ngày khởi hành";
+            // 
+            // lbNgayKhoiHanh
+            // 
+            this.lbNgayKhoiHanh.AutoSize = true;
+            this.lbNgayKhoiHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNgayKhoiHanh.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lbNgayKhoiHanh.Location = new System.Drawing.Point(94, 224);
+            this.lbNgayKhoiHanh.Name = "lbNgayKhoiHanh";
+            this.lbNgayKhoiHanh.Size = new System.Drawing.Size(14, 13);
+            this.lbNgayKhoiHanh.TabIndex = 0;
+            this.lbNgayKhoiHanh.Text = "_";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 244);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Giờ khởi hành";
+            // 
+            // lbGioChay
+            // 
+            this.lbGioChay.AutoSize = true;
+            this.lbGioChay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGioChay.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lbGioChay.Location = new System.Drawing.Point(94, 243);
+            this.lbGioChay.Name = "lbGioChay";
+            this.lbGioChay.Size = new System.Drawing.Size(14, 13);
+            this.lbGioChay.TabIndex = 0;
+            this.lbGioChay.Text = "_";
+            // 
             // FCapNhatThongTinVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 262);
+            this.ClientSize = new System.Drawing.Size(547, 287);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -420,6 +468,9 @@ namespace BanVeTau.GUI
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.CheckBox chkBiHoan;
         private System.Windows.Forms.CheckBox chkBiHuy;
-       
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbNgayKhoiHanh;
+        private System.Windows.Forms.Label lbGioChay;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -21,6 +21,15 @@ namespace BanVeTau.DAL
             }
         }
 
+
+        public static LichTrinh LayNgayKhoiHanhTheoTen(string ten)
+        {
+            using (var context = new VeTauEntities(false))
+            {
+                return context.LichTrinhs.SingleOrDefault(i => i.TenLichTrinh == ten);
+            }
+        }
+
         public static List<LichTrinh> LayTatCa(string doanTauId, bool? lichTrinhMau)
         {
             using (var context = new VeTauEntities(false))

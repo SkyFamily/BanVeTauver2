@@ -50,7 +50,6 @@ namespace BanVeTau.DAL
             {
                 return context.DoanTaus.SingleOrDefault(i => i.Id == id);
             }
-
         }
      
         public static int CapNhatDoanTau(DoanTau doanTau)

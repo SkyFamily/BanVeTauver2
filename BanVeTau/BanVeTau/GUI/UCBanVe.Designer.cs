@@ -67,6 +67,8 @@
             this.colDaDuocDat = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colCoTheHuy = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colSoShe = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.lbDoanTau = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
@@ -112,6 +114,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lbDoanTau);
             this.panel1.Controls.Add(this.dtNgayKhoiHanh);
             this.panel1.Controls.Add(this.btnDatGhe);
             this.panel1.Controls.Add(this.label5);
@@ -418,6 +421,21 @@
             // 
             this.colSoShe.Name = "colSoShe";
             // 
+            // lbDoanTau
+            // 
+            this.lbDoanTau.AutoSize = true;
+            this.lbDoanTau.Location = new System.Drawing.Point(695, 21);
+            this.lbDoanTau.Name = "lbDoanTau";
+            this.lbDoanTau.Size = new System.Drawing.Size(51, 13);
+            this.lbDoanTau.TabIndex = 6;
+            this.lbDoanTau.Text = "Đoàn tàu";
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // UcBanVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,5 +487,7 @@
         private DevExpress.XtraGrid.Columns.TileViewColumn colSoTien;
         private DevExpress.XtraGrid.Columns.TileViewColumn colDaDuocDat;
         private DevExpress.XtraGrid.Columns.TileViewColumn colCoTheHuy;
+        private System.Windows.Forms.Label lbDoanTau;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
