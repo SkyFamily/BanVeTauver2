@@ -101,5 +101,14 @@ namespace BanVeTau.Utils
                 MessageBox.Show("Không thể nhập ký tự đặc biệt", "Lỗi");
             }
         }
+
+        public static bool KiemTraThang(TextBox tb)
+        {
+            if (Convert.ToInt32(tb.Text) < 1 || (Convert.ToInt32(tb.Text) > 12))
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }
