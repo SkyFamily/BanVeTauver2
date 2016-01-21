@@ -69,6 +69,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbId.Location = new System.Drawing.Point(155, 40);
             this.tbId.Name = "tbId";
+            this.tbId.ReadOnly = true;
             this.tbId.Size = new System.Drawing.Size(273, 20);
             this.tbId.TabIndex = 1;
             // 

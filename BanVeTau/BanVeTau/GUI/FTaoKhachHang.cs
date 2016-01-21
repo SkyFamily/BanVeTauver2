@@ -88,6 +88,16 @@ namespace BanVeTau.GUI
             MyUtil.KiemTraKyTuDacBiet(tbMatKhau1, e);
         }
 
+        private void tbCMND_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbCMND,true,e);
+        }
+
+        private void tbDienThoai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraRangBuocTextBox(tbDienThoai, true, e);
+        }
+
         //private int LoadId()
         //{
 

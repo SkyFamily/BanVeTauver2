@@ -276,7 +276,7 @@
             0});
             this.numKhoangCach.Location = new System.Drawing.Point(552, 16);
             this.numKhoangCach.Maximum = new decimal(new int[] {
-            10000,
+            5000,
             0,
             0,
             0});

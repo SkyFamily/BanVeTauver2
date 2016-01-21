@@ -362,7 +362,6 @@
             // 
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnPhongBan);
             this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnNhanVien);
-            this.ribbonPageGroupNhanVien.ItemLinks.Add(this.btnLoaiKhachHang);
             this.ribbonPageGroupNhanVien.Name = "ribbonPageGroupNhanVien";
             toolTipTitleItem12.Text = "Quản lý các đối tượng căn bản cho việc tiến hành giao dịch";
             superToolTip12.Items.Add(toolTipTitleItem12);
@@ -373,6 +372,7 @@
             // 
             this.ribbonPageGroupKhachHang.AllowTextClipping = false;
             this.ribbonPageGroupKhachHang.ItemLinks.Add(this.btnNhanSu);
+            this.ribbonPageGroupKhachHang.ItemLinks.Add(this.btnLoaiKhachHang);
             this.ribbonPageGroupKhachHang.Name = "ribbonPageGroupKhachHang";
             this.ribbonPageGroupKhachHang.Text = "Khách hàng";
             // 

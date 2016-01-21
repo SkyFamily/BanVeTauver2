@@ -101,6 +101,7 @@
             this.tbDienThoai.Name = "tbDienThoai";
             this.tbDienThoai.Size = new System.Drawing.Size(273, 20);
             this.tbDienThoai.TabIndex = 3;
+            this.tbDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbDienThoai_KeyPress);
             // 
             // label4
             // 
@@ -119,6 +120,7 @@
             this.tbCMND.Name = "tbCMND";
             this.tbCMND.Size = new System.Drawing.Size(273, 20);
             this.tbCMND.TabIndex = 2;
+            this.tbCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCMND_KeyPress);
             // 
             // label3
             // 

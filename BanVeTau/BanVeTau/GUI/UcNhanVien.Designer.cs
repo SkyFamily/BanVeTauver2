@@ -196,7 +196,7 @@
             this.tbTen.Name = "tbTen";
             this.tbTen.Size = new System.Drawing.Size(160, 20);
             this.tbTen.TabIndex = 1;
-            this.tbTen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTen_KeyPress);
+            
             // 
             // label6
             // 

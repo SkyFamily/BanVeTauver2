@@ -92,7 +92,7 @@ namespace BanVeTau.GUI
 
         private void btnPhongBan_ItemClick(object sender, ItemClickEventArgs e)
         {
-            panelMain.Controls.Clear();
+            panelMain.Controls.Clear();          
             var phongBan = new UcPhongBan();
             panelMain.Controls.Add(phongBan);
         }

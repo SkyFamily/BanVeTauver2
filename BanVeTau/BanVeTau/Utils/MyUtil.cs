@@ -70,9 +70,9 @@ namespace BanVeTau.Utils
             return destImage;
         }
 
-        public static void KiemTraRangBuocTextBox(TextBox tb, bool so, KeyPressEventArgs e)
+        public static void KiemTraRangBuocTextBox(TextBox tb, bool isNumber, KeyPressEventArgs e)
         {
-            switch (so)
+            switch (isNumber)
             {
                 case true:
                     if (!Char.IsNumber(e.KeyChar) && !Char.IsControl(e.KeyChar))

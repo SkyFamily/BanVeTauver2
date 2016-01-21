@@ -182,5 +182,10 @@ namespace BanVeTau.GUI
         {
             MyUtil.KiemTraRangBuocTextBox(tbTenKhachHang, false, e);
         }
+
+        private void tbMatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MyUtil.KiemTraKyTuDacBiet(tbMatKhau, e);
+        }
     }
 }

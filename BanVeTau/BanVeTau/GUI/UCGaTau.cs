@@ -37,7 +37,7 @@ namespace BanVeTau.GUI
         {
             var id = Convert.ToInt32(gvNhaGa.GetFocusedRowCellValue("Id"));
 
-            if (id!=0)
+            if (id!=0 && DialogResult.Yes == MessageBox.Show("Bạn muốn xoá đối tượng này", Resources.MCanhBao, MessageBoxButtons.YesNo))
             {
                 if (GaTauDal.XoaGaTau(id) > 0)
                 {

@@ -74,10 +74,12 @@ namespace BanVeTau.GUI
 
             for (int i = 0; i < listLoaiGhe.Count; i++)
             {
+                //Add image vào list theo id
                 imageListLoaiGhe.Images.Add(listLoaiGhe[i].Id.ToString(), MyUtil.ByteArrayToImage(listLoaiGhe[i].Anh));
 
                 ListViewItem item = new ListViewItem();
                 item.Text = listLoaiGhe[i].Ten +"["+listLoaiGhe[i].HeSo.ToString("F1")+"]";
+                //Gán id cho list view qua image key
                 item.ImageKey = listLoaiGhe[i].Id.ToString();                
                 listViewLoaiGhe.Items.Add(item);
             }

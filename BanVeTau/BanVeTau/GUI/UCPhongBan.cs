@@ -14,7 +14,7 @@ namespace BanVeTau.GUI
 {
     public partial class UcPhongBan : UserControl
     {
-        const int ChieuDaiId = 2;
+        const int ChieuDaiId = 3;
         public UcPhongBan()
         {
             InitializeComponent();
@@ -35,6 +35,12 @@ namespace BanVeTau.GUI
         private void btn_Delete_Phongban_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
             var id = gvPhongBan.GetFocusedRowCellValue("Id").ToString();
+
+            if(id.Equals("ADMIN"))
+            {
+                MessageBox.Show("Không được xóa phòng quản trị", Resources.MThatBai);
+                return;
+            }
 
             if (!string.IsNullOrEmpty(id) && DialogResult.Yes == MessageBox.Show("Bạn muốn xoá đối tượng này", Resources.MCanhBao, MessageBoxButtons.YesNo))
             {
@@ -75,9 +81,9 @@ namespace BanVeTau.GUI
 
         private bool KiemTraHopLeVaThongBao()
         {
-            if (tbMaPhongBan.Text.Length < ChieuDaiId)
+            if ( tbMaPhongBan.Text.Length >= ChieuDaiId)
             {
-                MessageBox.Show(Resources.MaPhongBan + Resources.nhieuHon + ChieuDaiId + Resources.kyTu, Resources.MNhapLieuSai);
+                MessageBox.Show(Resources.MaPhongBan + "tối đa" + ChieuDaiId + Resources.kyTu, Resources.MNhapLieuSai);
                 return false;
             }
             return true;
