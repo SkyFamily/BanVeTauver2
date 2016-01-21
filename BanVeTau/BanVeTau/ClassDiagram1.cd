@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="BanVeTau.GUI.FChinh" Collapsed="true">
+  <Class Name="BanVeTau.GUI.FChinh">
     <Position X="1" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IoRDM8RBhCECQHGQAAGFFDgCoACOBK0imiEBwCIkCEA=</HashCode>
