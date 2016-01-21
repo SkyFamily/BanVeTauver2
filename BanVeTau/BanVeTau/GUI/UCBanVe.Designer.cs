@@ -42,6 +42,7 @@
             this.colSoTien = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.imageListLoaiGhe = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbDoanTau = new System.Windows.Forms.Label();
             this.dtNgayKhoiHanh = new System.Windows.Forms.DateTimePicker();
             this.btnDatGhe = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,8 +68,8 @@
             this.colDaDuocDat = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colCoTheHuy = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colSoShe = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.lbDoanTau = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.colNgayKhoiHanh = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
@@ -88,7 +89,7 @@
             this.colMaGhe.FieldName = "MaGhe";
             this.colMaGhe.Name = "colMaGhe";
             this.colMaGhe.Visible = true;
-            this.colMaGhe.VisibleIndex = 9;
+            this.colMaGhe.VisibleIndex = 10;
             // 
             // colTenKhachHang
             // 
@@ -104,7 +105,7 @@
             this.colSoTien.FieldName = "SoTien";
             this.colSoTien.Name = "colSoTien";
             this.colSoTien.Visible = true;
-            this.colSoTien.VisibleIndex = 10;
+            this.colSoTien.VisibleIndex = 11;
             // 
             // imageListLoaiGhe
             // 
@@ -131,6 +132,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1071, 81);
             this.panel1.TabIndex = 8;
+            // 
+            // lbDoanTau
+            // 
+            this.lbDoanTau.AutoSize = true;
+            this.lbDoanTau.Location = new System.Drawing.Point(695, 21);
+            this.lbDoanTau.Name = "lbDoanTau";
+            this.lbDoanTau.Size = new System.Drawing.Size(51, 13);
+            this.lbDoanTau.TabIndex = 6;
+            this.lbDoanTau.Text = "Đoàn tàu";
             // 
             // dtNgayKhoiHanh
             // 
@@ -278,6 +288,7 @@
             this.tileViewColumn2,
             this.colSoShe1,
             this.colTenKhachHang,
+            this.colNgayKhoiHanh,
             this.colMaGhe,
             this.colSoTien,
             this.colDaDuocDat,
@@ -405,7 +416,7 @@
             this.colDaDuocDat.FieldName = "DaDuocDat";
             this.colDaDuocDat.Name = "colDaDuocDat";
             this.colDaDuocDat.Visible = true;
-            this.colDaDuocDat.VisibleIndex = 11;
+            this.colDaDuocDat.VisibleIndex = 12;
             // 
             // colCoTheHuy
             // 
@@ -415,26 +426,25 @@
             this.colCoTheHuy.FieldName = "CoTheDat";
             this.colCoTheHuy.Name = "colCoTheHuy";
             this.colCoTheHuy.Visible = true;
-            this.colCoTheHuy.VisibleIndex = 12;
+            this.colCoTheHuy.VisibleIndex = 13;
             // 
             // colSoShe
             // 
             this.colSoShe.Name = "colSoShe";
-            // 
-            // lbDoanTau
-            // 
-            this.lbDoanTau.AutoSize = true;
-            this.lbDoanTau.Location = new System.Drawing.Point(695, 21);
-            this.lbDoanTau.Name = "lbDoanTau";
-            this.lbDoanTau.Size = new System.Drawing.Size(51, 13);
-            this.lbDoanTau.TabIndex = 6;
-            this.lbDoanTau.Text = "Đoàn tàu";
             // 
             // imageList1
             // 
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // colNgayKhoiHanh
+            // 
+            this.colNgayKhoiHanh.Caption = "tileViewColumn3";
+            this.colNgayKhoiHanh.FieldName = "Ngay Khoi Hanh";
+            this.colNgayKhoiHanh.Name = "colNgayKhoiHanh";
+            this.colNgayKhoiHanh.Visible = true;
+            this.colNgayKhoiHanh.VisibleIndex = 9;
             // 
             // UcBanVe
             // 
@@ -489,5 +499,6 @@
         private DevExpress.XtraGrid.Columns.TileViewColumn colCoTheHuy;
         private System.Windows.Forms.Label lbDoanTau;
         private System.Windows.Forms.ImageList imageList1;
+        private DevExpress.XtraGrid.Columns.TileViewColumn colNgayKhoiHanh;
     }
 }
