@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="BanVeTau.GUI.FChinh">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="BanVeTau.GUI.FChinh" Collapsed="true">
     <Position X="1" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IoRDM8RBhCECQHGQAAGFFDgCoACOBK0imiEBwCIkCEA=</HashCode>
@@ -15,7 +15,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.DAL.ChiTietGiaoDichDal" Collapsed="true">
-    <Position X="14.5" Y="19.5" Width="1.5" />
+    <Position X="14.5" Y="19.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAAAAABAAAAAAAAAAAEAAACAAAA=</HashCode>
       <FileName>DAL\ChiTietGiaoDichDal.cs</FileName>
@@ -64,7 +64,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.DAL.LichTrinhTuyenDuongDal" Collapsed="true">
-    <Position X="9.25" Y="18" Width="1.5" />
+    <Position X="9.25" Y="18" Width="2" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAABAAAAAAZAAABAAAAAAAAAAARAEAACAAA=</HashCode>
       <FileName>DAL\LichTrinhTuyenDuongDal.cs</FileName>
@@ -78,7 +78,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.DAL.LoaiKhachHangDal" Collapsed="true">
-    <Position X="9.25" Y="22.5" Width="1.5" />
+    <Position X="9.25" Y="22.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAACAAAAAgAAAAAABAAAAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>DAL\LoaiKhachHangDal.cs</FileName>
@@ -113,7 +113,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.DAL.ChiTietGiaoDich" Collapsed="true">
-    <Position X="9.25" Y="27" Width="1.5" />
+    <Position X="9.25" Y="27" Width="1.75" />
     <TypeIdentifier>
       <HashCode>CAQAAAAAAAAMAAAAAAAAAAAADAQAAgACAAAAAAAAAAA=</HashCode>
       <FileName>DAL\ChiTietGiaoDich.cs</FileName>
@@ -127,7 +127,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.DAL.DoanTau_LoaiGhe" Collapsed="true">
-    <Position X="9.25" Y="20.25" Width="1.5" />
+    <Position X="9.25" Y="20.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAEAAAAAAAAgAAQAAAACAAAAAAgAAAA=</HashCode>
       <FileName>DAL\DoanTau_LoaiGhe.cs</FileName>
@@ -162,7 +162,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.DAL.LichTrinh_TuyenDuong" Collapsed="true">
-    <Position X="14.5" Y="21.75" Width="1.5" />
+    <Position X="14.5" Y="21.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>IAACAAAAAAAIAQCABABACAAAAAAAAAAAAAAAAAQAgAA=</HashCode>
       <FileName>DAL\LichTrinh_TuyenDuong.cs</FileName>
@@ -227,7 +227,7 @@
   <Class Name="BanVeTau.GUI.FTaoKhachHang" Collapsed="true">
     <Position X="1" Y="10" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEYgAACAAABQgBACAACBKAAAAAgAAAAgQAAAAAAA=</HashCode>
+      <HashCode>AAAAEYgAACAAABQgBACAACBKAAAAAgAAAAgQABAAAAA=</HashCode>
       <FileName>GUI\FTaoKhachHang.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -309,7 +309,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.GUI.UcKhachHang" Collapsed="true">
-    <Position X="12.25" Y="14.75" Width="1.5" />
+    <Position X="12.25" Y="13.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACEgkYigACEAQBQgMkCAgCACACACAgAAAHAwS5AAwEA=</HashCode>
       <FileName>GUI\UcKhachHang.cs</FileName>
@@ -386,35 +386,35 @@
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.Models.GaTauModel1" Collapsed="true">
-    <Position X="14.5" Y="27.75" Width="1.5" />
+    <Position X="17.25" Y="28.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\GaTauModel1.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.Models.GheModel" Collapsed="true">
-    <Position X="14.5" Y="25.5" Width="1.5" />
+    <Position X="17.25" Y="26.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAQBQAAAAAAEgABAAAAACAAAAEBABgACAAQAACAAAEA=</HashCode>
       <FileName>Models\GheModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.Models.LichTrinhModel" Collapsed="true">
-    <Position X="14.5" Y="28.5" Width="1.5" />
+    <Position X="17.25" Y="27.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABASAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Models\LichTrinhModel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.Models.LichTrinhTuyenDuongModelcs" Collapsed="true">
-    <Position X="14.5" Y="29.25" Width="1.5" />
+    <Position X="17.25" Y="29.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>IAACAAAAAAAIEQCABAAACAAAAAQAAAAAAEAAAAQAQAA=</HashCode>
       <FileName>Models\LichTrinhTuyenDuongModelcs.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BanVeTau.Models.RPGiaoDich" Collapsed="true">
-    <Position X="14.5" Y="20.25" Width="1.5" />
+    <Position X="17.25" Y="25.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAEBAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\RPGiaoDich.cs</FileName>
@@ -484,7 +484,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="System.Windows.Forms.UserControl" Collapsed="true">
-    <Position X="12.25" Y="2.75" Width="1.5" />
+    <Position X="12.25" Y="4.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Data.Entity.DbContext" Collapsed="true">
