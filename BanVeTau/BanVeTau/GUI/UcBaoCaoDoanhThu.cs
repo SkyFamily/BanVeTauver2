@@ -40,7 +40,7 @@ namespace BanVeTau.GUI
 
         private void btnXem_Click(object sender, EventArgs e)
         {
-            if (cbDoanTau.SelectedIndex < 0 || tbThang.Text == "" || tbNam.Text == "")
+            if (cbDoanTau.SelectedIndex < 0 || tbThang.Text.Equals(string.Empty)|| tbNam.Text.Equals(string.Empty))
             {
                 MessageBox.Show("Chưa nhập đủ thông tin", "Lỗi");
                 return;

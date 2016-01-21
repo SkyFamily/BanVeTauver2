@@ -29,32 +29,42 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.View_DoanhThuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.veTauDataSet = new BanVeTau.Report.VeTauDataSet();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnXem = new System.Windows.Forms.Button();
             this.tbNam = new System.Windows.Forms.TextBox();
+            this.tbThang = new System.Windows.Forms.TextBox();
             this.cbDoanTau = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.View_DoanhThuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.veTauDataSet = new BanVeTau.Report.VeTauDataSet();
             this.view_DoanhThuTableAdapter = new BanVeTau.Report.VeTauDataSetTableAdapters.View_DoanhThuTableAdapter();
-            this.tbThang = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.View_DoanhThuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.veTauDataSet)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // View_DoanhThuBindingSource
+            // 
+            this.View_DoanhThuBindingSource.DataMember = "View_DoanhThu";
+            this.View_DoanhThuBindingSource.DataSource = this.veTauDataSet;
+            // 
+            // veTauDataSet
+            // 
+            this.veTauDataSet.DataSetName = "VeTauDataSet";
+            this.veTauDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource3.Name = "DataSetDoanhThu";
-            reportDataSource3.Value = this.View_DoanhThuBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource1.Name = "DataSetDoanhThu";
+            reportDataSource1.Value = this.View_DoanhThuBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "BanVeTau.Report.ReportDoanhThu.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -93,8 +103,17 @@
             this.tbNam.Size = new System.Drawing.Size(61, 20);
             this.tbNam.TabIndex = 2;
             // 
+            // tbThang
+            // 
+            this.tbThang.Location = new System.Drawing.Point(296, 13);
+            this.tbThang.Name = "tbThang";
+            this.tbThang.Size = new System.Drawing.Size(61, 20);
+            this.tbThang.TabIndex = 1;
+            this.tbThang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbThang_KeyPress);
+            // 
             // cbDoanTau
             // 
+            this.cbDoanTau.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDoanTau.FormattingEnabled = true;
             this.cbDoanTau.Location = new System.Drawing.Point(66, 12);
             this.cbDoanTau.Name = "cbDoanTau";
@@ -138,27 +157,9 @@
             this.panel2.Size = new System.Drawing.Size(986, 399);
             this.panel2.TabIndex = 2;
             // 
-            // View_DoanhThuBindingSource
-            // 
-            this.View_DoanhThuBindingSource.DataMember = "View_DoanhThu";
-            this.View_DoanhThuBindingSource.DataSource = this.veTauDataSet;
-            // 
-            // veTauDataSet
-            // 
-            this.veTauDataSet.DataSetName = "VeTauDataSet";
-            this.veTauDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // view_DoanhThuTableAdapter
             // 
             this.view_DoanhThuTableAdapter.ClearBeforeFill = true;
-            // 
-            // tbThang
-            // 
-            this.tbThang.Location = new System.Drawing.Point(296, 13);
-            this.tbThang.Name = "tbThang";
-            this.tbThang.Size = new System.Drawing.Size(61, 20);
-            this.tbThang.TabIndex = 1;
-            this.tbThang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbThang_KeyPress);
             // 
             // UcBaoCaoDoanhThu
             // 
@@ -169,11 +170,11 @@
             this.Name = "UcBaoCaoDoanhThu";
             this.Size = new System.Drawing.Size(986, 448);
             this.Load += new System.EventHandler(this.UcBaoCaoDoanhThuTC_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.View_DoanhThuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veTauDataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.View_DoanhThuBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veTauDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
