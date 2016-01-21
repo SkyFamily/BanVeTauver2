@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement1 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement2 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement3 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement4 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement5 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement6 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement7 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement8 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement9 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement10 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement11 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement12 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement13 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement14 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
             this.colAnh = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colMaGhe = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colTenKhachHang = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colSoTien = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.imageListLoaiGhe = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbDoanTau = new System.Windows.Forms.Label();
+            this.lbNgay = new System.Windows.Forms.Label();
             this.dtNgayKhoiHanh = new System.Windows.Forms.DateTimePicker();
             this.btnDatGhe = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -65,11 +65,11 @@
             this.tileViewColumn1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.tileViewColumn2 = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colSoShe1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.colNgayKhoiHanh = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colDaDuocDat = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colCoTheHuy = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colSoShe = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.colNgayKhoiHanh = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
@@ -115,7 +115,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lbDoanTau);
+            this.panel1.Controls.Add(this.lbNgay);
             this.panel1.Controls.Add(this.dtNgayKhoiHanh);
             this.panel1.Controls.Add(this.btnDatGhe);
             this.panel1.Controls.Add(this.label5);
@@ -133,23 +133,24 @@
             this.panel1.Size = new System.Drawing.Size(1071, 81);
             this.panel1.TabIndex = 8;
             // 
-            // lbDoanTau
+            // lbNgay
             // 
-            this.lbDoanTau.AutoSize = true;
-            this.lbDoanTau.Location = new System.Drawing.Point(695, 21);
-            this.lbDoanTau.Name = "lbDoanTau";
-            this.lbDoanTau.Size = new System.Drawing.Size(51, 13);
-            this.lbDoanTau.TabIndex = 6;
-            this.lbDoanTau.Text = "Đoàn tàu";
+            this.lbNgay.AutoSize = true;
+            this.lbNgay.Location = new System.Drawing.Point(548, 17);
+            this.lbNgay.Name = "lbNgay";
+            this.lbNgay.Size = new System.Drawing.Size(82, 13);
+            this.lbNgay.TabIndex = 6;
+            this.lbNgay.Text = "Ngày khởi hành";
             // 
             // dtNgayKhoiHanh
             // 
             this.dtNgayKhoiHanh.CustomFormat = "dd/MM/yyyy HH:hh";
             this.dtNgayKhoiHanh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgayKhoiHanh.Location = new System.Drawing.Point(524, 15);
+            this.dtNgayKhoiHanh.Location = new System.Drawing.Point(747, 45);
             this.dtNgayKhoiHanh.Name = "dtNgayKhoiHanh";
             this.dtNgayKhoiHanh.Size = new System.Drawing.Size(129, 20);
             this.dtNgayKhoiHanh.TabIndex = 4;
+            this.dtNgayKhoiHanh.Visible = false;
             this.dtNgayKhoiHanh.ValueChanged += new System.EventHandler(this.dtNgayKhoiHanh_ValueChanged);
             // 
             // btnDatGhe
@@ -165,7 +166,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(436, 21);
+            this.label5.Location = new System.Drawing.Point(439, 17);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 4;
@@ -306,58 +307,58 @@
             this.tileView.OptionsTiles.RowCount = 5;
             this.tileView.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colTen, DevExpress.Data.ColumnSortOrder.Ascending)});
-            tileViewItemElement1.Column = this.colAnh;
-            tileViewItemElement1.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleRight;
-            tileViewItemElement1.ImageBorder = DevExpress.XtraEditors.TileItemElementImageBorderMode.None;
-            tileViewItemElement1.ImageBorderColor = System.Drawing.Color.Empty;
-            tileViewItemElement1.ImageLocation = new System.Drawing.Point(11, -12);
-            tileViewItemElement1.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch;
-            tileViewItemElement1.ImageSize = new System.Drawing.Size(64, 64);
-            tileViewItemElement1.Text = "colAnh";
-            tileViewItemElement2.Column = null;
-            tileViewItemElement2.ImageBorderColor = System.Drawing.Color.Empty;
-            tileViewItemElement2.Text = "Mã ghế";
-            tileViewItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileViewItemElement3.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Right;
-            tileViewItemElement3.AnchorElementIndex = 1;
-            tileViewItemElement3.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.25F, System.Drawing.FontStyle.Bold);
-            tileViewItemElement3.Appearance.Normal.ForeColor = System.Drawing.SystemColors.Highlight;
-            tileViewItemElement3.Appearance.Normal.Options.UseFont = true;
-            tileViewItemElement3.Appearance.Normal.Options.UseForeColor = true;
-            tileViewItemElement3.Column = this.colMaGhe;
-            tileViewItemElement3.ImageBorderColor = System.Drawing.Color.Empty;
-            tileViewItemElement3.Text = "colMaGhe";
-            tileViewItemElement4.Column = null;
-            tileViewItemElement4.ImageBorderColor = System.Drawing.Color.Empty;
-            tileViewItemElement4.Text = "KH";
-            tileViewItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileViewItemElement4.TextLocation = new System.Drawing.Point(0, 18);
-            tileViewItemElement5.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Right;
-            tileViewItemElement5.AnchorElementIndex = 3;
-            tileViewItemElement5.Appearance.Normal.ForeColor = System.Drawing.SystemColors.Highlight;
-            tileViewItemElement5.Appearance.Normal.Options.UseForeColor = true;
-            tileViewItemElement5.Column = this.colTenKhachHang;
-            tileViewItemElement5.ImageBorderColor = System.Drawing.Color.Empty;
-            tileViewItemElement5.Text = "colTenKhachHang";
-            tileViewItemElement6.Column = null;
-            tileViewItemElement6.ImageBorderColor = System.Drawing.Color.Empty;
-            tileViewItemElement6.Text = "Giá vé";
-            tileViewItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
-            tileViewItemElement6.TextLocation = new System.Drawing.Point(0, 36);
-            tileViewItemElement7.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Right;
-            tileViewItemElement7.AnchorElementIndex = 5;
-            tileViewItemElement7.Appearance.Normal.ForeColor = System.Drawing.SystemColors.Highlight;
-            tileViewItemElement7.Appearance.Normal.Options.UseForeColor = true;
-            tileViewItemElement7.Column = this.colSoTien;
-            tileViewItemElement7.ImageBorderColor = System.Drawing.Color.Empty;
-            tileViewItemElement7.Text = "colSoTien";
-            this.tileView.TileTemplate.Add(tileViewItemElement1);
-            this.tileView.TileTemplate.Add(tileViewItemElement2);
-            this.tileView.TileTemplate.Add(tileViewItemElement3);
-            this.tileView.TileTemplate.Add(tileViewItemElement4);
-            this.tileView.TileTemplate.Add(tileViewItemElement5);
-            this.tileView.TileTemplate.Add(tileViewItemElement6);
-            this.tileView.TileTemplate.Add(tileViewItemElement7);
+            tileViewItemElement8.Column = this.colAnh;
+            tileViewItemElement8.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleRight;
+            tileViewItemElement8.ImageBorder = DevExpress.XtraEditors.TileItemElementImageBorderMode.None;
+            tileViewItemElement8.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement8.ImageLocation = new System.Drawing.Point(11, -12);
+            tileViewItemElement8.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch;
+            tileViewItemElement8.ImageSize = new System.Drawing.Size(64, 64);
+            tileViewItemElement8.Text = "colAnh";
+            tileViewItemElement9.Column = null;
+            tileViewItemElement9.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement9.Text = "Mã ghế";
+            tileViewItemElement9.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
+            tileViewItemElement10.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Right;
+            tileViewItemElement10.AnchorElementIndex = 1;
+            tileViewItemElement10.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.25F, System.Drawing.FontStyle.Bold);
+            tileViewItemElement10.Appearance.Normal.ForeColor = System.Drawing.SystemColors.Highlight;
+            tileViewItemElement10.Appearance.Normal.Options.UseFont = true;
+            tileViewItemElement10.Appearance.Normal.Options.UseForeColor = true;
+            tileViewItemElement10.Column = this.colMaGhe;
+            tileViewItemElement10.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement10.Text = "colMaGhe";
+            tileViewItemElement11.Column = null;
+            tileViewItemElement11.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement11.Text = "KH";
+            tileViewItemElement11.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
+            tileViewItemElement11.TextLocation = new System.Drawing.Point(0, 18);
+            tileViewItemElement12.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Right;
+            tileViewItemElement12.AnchorElementIndex = 3;
+            tileViewItemElement12.Appearance.Normal.ForeColor = System.Drawing.SystemColors.Highlight;
+            tileViewItemElement12.Appearance.Normal.Options.UseForeColor = true;
+            tileViewItemElement12.Column = this.colTenKhachHang;
+            tileViewItemElement12.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement12.Text = "colTenKhachHang";
+            tileViewItemElement13.Column = null;
+            tileViewItemElement13.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement13.Text = "Giá vé";
+            tileViewItemElement13.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
+            tileViewItemElement13.TextLocation = new System.Drawing.Point(0, 36);
+            tileViewItemElement14.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Right;
+            tileViewItemElement14.AnchorElementIndex = 5;
+            tileViewItemElement14.Appearance.Normal.ForeColor = System.Drawing.SystemColors.Highlight;
+            tileViewItemElement14.Appearance.Normal.Options.UseForeColor = true;
+            tileViewItemElement14.Column = this.colSoTien;
+            tileViewItemElement14.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement14.Text = "colSoTien";
+            this.tileView.TileTemplate.Add(tileViewItemElement8);
+            this.tileView.TileTemplate.Add(tileViewItemElement9);
+            this.tileView.TileTemplate.Add(tileViewItemElement10);
+            this.tileView.TileTemplate.Add(tileViewItemElement11);
+            this.tileView.TileTemplate.Add(tileViewItemElement12);
+            this.tileView.TileTemplate.Add(tileViewItemElement13);
+            this.tileView.TileTemplate.Add(tileViewItemElement14);
             // 
             // colLoaiGheId
             // 
@@ -408,6 +409,14 @@
             this.colSoShe1.Visible = true;
             this.colSoShe1.VisibleIndex = 7;
             // 
+            // colNgayKhoiHanh
+            // 
+            this.colNgayKhoiHanh.Caption = "tileViewColumn3";
+            this.colNgayKhoiHanh.FieldName = "Ngay Khoi Hanh";
+            this.colNgayKhoiHanh.Name = "colNgayKhoiHanh";
+            this.colNgayKhoiHanh.Visible = true;
+            this.colNgayKhoiHanh.VisibleIndex = 9;
+            // 
             // colDaDuocDat
             // 
             this.colDaDuocDat.AppearanceCell.BackColor = System.Drawing.Color.LightGreen;
@@ -437,14 +446,6 @@
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // colNgayKhoiHanh
-            // 
-            this.colNgayKhoiHanh.Caption = "tileViewColumn3";
-            this.colNgayKhoiHanh.FieldName = "Ngay Khoi Hanh";
-            this.colNgayKhoiHanh.Name = "colNgayKhoiHanh";
-            this.colNgayKhoiHanh.Visible = true;
-            this.colNgayKhoiHanh.VisibleIndex = 9;
             // 
             // UcBanVe
             // 
@@ -497,7 +498,7 @@
         private DevExpress.XtraGrid.Columns.TileViewColumn colSoTien;
         private DevExpress.XtraGrid.Columns.TileViewColumn colDaDuocDat;
         private DevExpress.XtraGrid.Columns.TileViewColumn colCoTheHuy;
-        private System.Windows.Forms.Label lbDoanTau;
+        private System.Windows.Forms.Label lbNgay;
         private System.Windows.Forms.ImageList imageList1;
         private DevExpress.XtraGrid.Columns.TileViewColumn colNgayKhoiHanh;
     }

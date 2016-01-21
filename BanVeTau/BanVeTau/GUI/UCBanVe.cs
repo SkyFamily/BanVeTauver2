@@ -23,7 +23,7 @@ namespace BanVeTau.GUI
         {
             InitializeComponent();
             gridControl.DataSource = new List<GheModel>();
-            lbDoanTau.Text = "";
+            lbNgay.Text = "";
             
         }
 
@@ -93,6 +93,7 @@ namespace BanVeTau.GUI
             
 
             cbLichTrinh.DataSource = listLichTrinh;
+            
            
             if (listLichTrinh.Count > 0)
             {
@@ -103,6 +104,13 @@ namespace BanVeTau.GUI
                 cbLichTrinh.SelectedIndex = -1;
                 SelectedListTuyenDuong = new List<LichTrinhTuyenDuongModelcs>();
                 CapNhatDanhSachGhe();
+            }
+
+            if (cbLichTrinh.Text != "")
+            {
+                lbNgay.Text = "";
+                var listNgayKhoiHanh = LichTrinhDal.LayNgayKhoiHanhTheoTen(cbLichTrinh.Text);
+                lbNgay.Text = listNgayKhoiHanh.GioChay.ToShortDateString();
             }
         }
 
@@ -178,7 +186,12 @@ namespace BanVeTau.GUI
                     ghes.Add(ghe);
                 }
             }
-            
+            if (cbLichTrinh.Text != "")
+            {
+                lbNgay.Text = "";
+                var listNgayKhoiHanh = LichTrinhDal.LayNgayKhoiHanhTheoTen(cbLichTrinh.Text);
+                lbNgay.Text = listNgayKhoiHanh.GioChay.ToShortDateString();
+            }
             gridControl.DataSource = ghes;
         }
 

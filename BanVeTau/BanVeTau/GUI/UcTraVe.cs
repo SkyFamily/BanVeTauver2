@@ -147,6 +147,7 @@ namespace BanVeTau.GUI
                 var lichTrinhTuyenDuongs = LichTrinhTuyenDuongDal.LayLichTrinhGiaoDich(giaoDich.Id);
                 
                 ghe.TenLichTrinh = LayTuyenDuong(lichTrinhTuyenDuongs);
+                
 
                 var length = ghe.TenLichTrinh.Length;
 

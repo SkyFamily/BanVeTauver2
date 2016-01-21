@@ -232,7 +232,7 @@ namespace BanVeTau.DAL
 
                 return context.LichTrinhs.Where(
                     lt =>
-                        lt.TrangThai > -1 && !lt.LichTrinhMau && lt.GioDen >= ngayKhoiHanh &&
+                        lt.TrangThai > -1 && !lt.LichTrinhMau && lt.GioChay >= ngayKhoiHanh &&
                         listIdLichTrinh.Contains(lt.Id)).ToList();
             }
         }
