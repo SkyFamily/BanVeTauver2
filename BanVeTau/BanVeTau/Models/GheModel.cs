@@ -26,5 +26,7 @@ namespace BanVeTau.Models
         public bool HuyGhe { get; set; }
         public string KhachHangId { get; set; }
         public string TenLichTrinh { get; set; }
+        public string NgayKhoiHanh { get; set; }
+        public string GioKhoiHanh { get; set; }
     }
 }

@@ -38,6 +38,10 @@
             DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement7 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
             DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement8 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
             DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement9 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement10 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement11 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement12 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement13 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
             this.colAnh = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colMaGhe = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colTenKhachHang = new DevExpress.XtraGrid.Columns.TileViewColumn();
@@ -71,6 +75,8 @@
             this.colSoShe1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colDaDuocDat = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colCoTheDat = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.colNgay = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.colGio = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridLockUpSearch.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridLookUpEdit1View)).BeginInit();
@@ -85,21 +91,21 @@
             this.colAnh.FieldName = "Anh";
             this.colAnh.Name = "colAnh";
             this.colAnh.Visible = true;
-            this.colAnh.VisibleIndex = 2;
+            this.colAnh.VisibleIndex = 3;
             // 
             // colMaGhe
             // 
             this.colMaGhe.FieldName = "MaGhe";
             this.colMaGhe.Name = "colMaGhe";
             this.colMaGhe.Visible = true;
-            this.colMaGhe.VisibleIndex = 8;
+            this.colMaGhe.VisibleIndex = 10;
             // 
             // colTenKhachHang
             // 
             this.colTenKhachHang.FieldName = "TenKhachHang";
             this.colTenKhachHang.Name = "colTenKhachHang";
             this.colTenKhachHang.Visible = true;
-            this.colTenKhachHang.VisibleIndex = 7;
+            this.colTenKhachHang.VisibleIndex = 9;
             // 
             // colSoTien
             // 
@@ -108,14 +114,14 @@
             this.colSoTien.FieldName = "SoTien";
             this.colSoTien.Name = "colSoTien";
             this.colSoTien.Visible = true;
-            this.colSoTien.VisibleIndex = 9;
+            this.colSoTien.VisibleIndex = 11;
             // 
             // colTenLichTrinh
             // 
             this.colTenLichTrinh.FieldName = "TenLichTrinh";
             this.colTenLichTrinh.Name = "colTenLichTrinh";
             this.colTenLichTrinh.Visible = true;
-            this.colTenLichTrinh.VisibleIndex = 12;
+            this.colTenLichTrinh.VisibleIndex = 14;
             // 
             // btnHuyGhe
             // 
@@ -275,6 +281,7 @@
             // bindingSource1
             // 
             this.bindingSource1.DataSource = typeof(BanVeTau.Models.GheModel);
+            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // tileView
             // 
@@ -282,6 +289,7 @@
             this.tileView.AppearanceItem.Selected.BackColor2 = System.Drawing.Color.YellowGreen;
             this.tileView.AppearanceItem.Selected.Options.UseBackColor = true;
             this.tileView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colGio,
             this.colLoaiGheId,
             this.colTen,
             this.colAnh,
@@ -289,6 +297,7 @@
             this.colTenLichTrinh,
             this.tileViewColumn1,
             this.tileViewColumn2,
+            this.colNgay,
             this.colSoShe1,
             this.colTenKhachHang,
             this.colMaGhe,
@@ -304,8 +313,8 @@
             this.tileView.Name = "tileView";
             this.tileView.OptionsFind.AlwaysVisible = true;
             this.tileView.OptionsFind.FindMode = DevExpress.XtraEditors.FindMode.Always;
-            this.tileView.OptionsTiles.ItemSize = new System.Drawing.Size(180, 80);
-            this.tileView.OptionsTiles.RowCount = 5;
+            this.tileView.OptionsTiles.ItemSize = new System.Drawing.Size(180, 120);
+            this.tileView.OptionsTiles.RowCount = 6;
             this.tileView.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colTen, DevExpress.Data.ColumnSortOrder.Ascending)});
             tileViewItemElement1.Column = this.colAnh;
@@ -363,6 +372,27 @@
             tileViewItemElement9.Column = this.colTenLichTrinh;
             tileViewItemElement9.ImageBorderColor = System.Drawing.Color.Empty;
             tileViewItemElement9.Text = "colTenLichTrinh";
+            tileViewItemElement10.Column = null;
+            tileViewItemElement10.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement10.Text = "Ngày khởi hành";
+            tileViewItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
+            tileViewItemElement10.TextLocation = new System.Drawing.Point(0, 72);
+            tileViewItemElement11.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Right;
+            tileViewItemElement11.AnchorElementIndex = 9;
+            tileViewItemElement11.Column = this.colNgay;
+            tileViewItemElement11.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement11.Text = "colNgay";
+            tileViewItemElement12.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Right;
+            tileViewItemElement12.AnchorElementIndex = 12;
+            tileViewItemElement12.Column = this.colGio;
+            tileViewItemElement12.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement12.Text = "colGio";
+            tileViewItemElement13.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Bottom;
+            tileViewItemElement13.Column = null;
+            tileViewItemElement13.ImageBorderColor = System.Drawing.Color.Empty;
+            tileViewItemElement13.Text = "Giờ khởi hành";
+            tileViewItemElement13.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
+            tileViewItemElement13.TextLocation = new System.Drawing.Point(0, 90);
             this.tileView.TileTemplate.Add(tileViewItemElement1);
             this.tileView.TileTemplate.Add(tileViewItemElement2);
             this.tileView.TileTemplate.Add(tileViewItemElement3);
@@ -372,48 +402,52 @@
             this.tileView.TileTemplate.Add(tileViewItemElement7);
             this.tileView.TileTemplate.Add(tileViewItemElement8);
             this.tileView.TileTemplate.Add(tileViewItemElement9);
+            this.tileView.TileTemplate.Add(tileViewItemElement10);
+            this.tileView.TileTemplate.Add(tileViewItemElement11);
+            this.tileView.TileTemplate.Add(tileViewItemElement12);
+            this.tileView.TileTemplate.Add(tileViewItemElement13);
             // 
             // colLoaiGheId
             // 
             this.colLoaiGheId.FieldName = "LoaiGheId";
             this.colLoaiGheId.Name = "colLoaiGheId";
             this.colLoaiGheId.Visible = true;
-            this.colLoaiGheId.VisibleIndex = 0;
+            this.colLoaiGheId.VisibleIndex = 1;
             // 
             // colTen
             // 
             this.colTen.FieldName = "Ten";
             this.colTen.Name = "colTen";
             this.colTen.Visible = true;
-            this.colTen.VisibleIndex = 1;
+            this.colTen.VisibleIndex = 2;
             // 
             // colGiaoDichId
             // 
             this.colGiaoDichId.FieldName = "GiaoDichId";
             this.colGiaoDichId.Name = "colGiaoDichId";
             this.colGiaoDichId.Visible = true;
-            this.colGiaoDichId.VisibleIndex = 3;
+            this.colGiaoDichId.VisibleIndex = 4;
             // 
             // tileViewColumn1
             // 
             this.tileViewColumn1.FieldName = "LichTrinhTuyenDuongId";
             this.tileViewColumn1.Name = "tileViewColumn1";
             this.tileViewColumn1.Visible = true;
-            this.tileViewColumn1.VisibleIndex = 4;
+            this.tileViewColumn1.VisibleIndex = 5;
             // 
             // tileViewColumn2
             // 
             this.tileViewColumn2.FieldName = "LichTrinhId";
             this.tileViewColumn2.Name = "tileViewColumn2";
             this.tileViewColumn2.Visible = true;
-            this.tileViewColumn2.VisibleIndex = 5;
+            this.tileViewColumn2.VisibleIndex = 6;
             // 
             // colSoShe1
             // 
             this.colSoShe1.FieldName = "SoShe";
             this.colSoShe1.Name = "colSoShe1";
             this.colSoShe1.Visible = true;
-            this.colSoShe1.VisibleIndex = 6;
+            this.colSoShe1.VisibleIndex = 7;
             // 
             // colDaDuocDat
             // 
@@ -423,7 +457,7 @@
             this.colDaDuocDat.FieldName = "DaDuocDat";
             this.colDaDuocDat.Name = "colDaDuocDat";
             this.colDaDuocDat.Visible = true;
-            this.colDaDuocDat.VisibleIndex = 10;
+            this.colDaDuocDat.VisibleIndex = 12;
             // 
             // colCoTheDat
             // 
@@ -433,7 +467,21 @@
             this.colCoTheDat.FieldName = "CoTheDat";
             this.colCoTheDat.Name = "colCoTheDat";
             this.colCoTheDat.Visible = true;
-            this.colCoTheDat.VisibleIndex = 11;
+            this.colCoTheDat.VisibleIndex = 13;
+            // 
+            // colNgay
+            // 
+            this.colNgay.FieldName = "NgayKhoiHanh";
+            this.colNgay.Name = "colNgay";
+            this.colNgay.Visible = true;
+            this.colNgay.VisibleIndex = 8;
+            // 
+            // colGio
+            // 
+            this.colGio.FieldName = "GioKhoiHanh";
+            this.colGio.Name = "colGio";
+            this.colGio.Visible = true;
+            this.colGio.VisibleIndex = 0;
             // 
             // UcTraVe
             // 
@@ -489,5 +537,7 @@
         private DevExpress.XtraGrid.Columns.TileViewColumn colSoTien;
         private DevExpress.XtraGrid.Columns.TileViewColumn colDaDuocDat;
         private DevExpress.XtraGrid.Columns.TileViewColumn colCoTheDat;
+        private DevExpress.XtraGrid.Columns.TileViewColumn colGio;
+        private DevExpress.XtraGrid.Columns.TileViewColumn colNgay;
     }
 }

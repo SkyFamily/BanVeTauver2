@@ -124,6 +124,8 @@ namespace BanVeTau.GUI
 
                 var ctgd = giaoDich.ChiTietGiaoDiches.First();
 
+                var ngay = LichTrinhDal.LayTheoId(giaoDich.LichTrinhId);
+
                 var lg = LoaiGheDal.LayLoaiGhe(giaoDich.ChiTietGiaoDiches.First().LoaiGheId);
 
                 var ghe = new GheModel
@@ -142,12 +144,13 @@ namespace BanVeTau.GUI
                     GiaoDichId = giaoDich.Id,
                     LichTrinhId = giaoDich.LichTrinhId,
                     KhachHangId = giaoDich.KhachHangId,
+                    NgayKhoiHanh = ngay.GioChay.ToShortDateString(),
+                    GioKhoiHanh = ngay.GioChay.ToShortTimeString(),
                     SoTien = giaoDich.SoTien
                 };
                 var lichTrinhTuyenDuongs = LichTrinhTuyenDuongDal.LayLichTrinhGiaoDich(giaoDich.Id);
                 
                 ghe.TenLichTrinh = LayTuyenDuong(lichTrinhTuyenDuongs);
-                
 
                 var length = ghe.TenLichTrinh.Length;
 
@@ -157,7 +160,7 @@ namespace BanVeTau.GUI
                                               ghe.TenLichTrinh.Substring(ghe.TenLichTrinh.Length - 12, 12);
                 }
 
-               
+                
                 ghes.Add(ghe);
             }
          
@@ -195,6 +198,11 @@ namespace BanVeTau.GUI
             lbTuyenDuongText.Append(" || ");
 
             return lbTuyenDuongText.ToString();
+        }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
