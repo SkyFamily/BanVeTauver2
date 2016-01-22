@@ -40,7 +40,11 @@ namespace BanVeTau.GUI
             this.label10 = new System.Windows.Forms.Label();
             this.lbLichTrinh = new System.Windows.Forms.Label();
             this.lbDoanTau = new System.Windows.Forms.Label();
+            this.lbGioChay = new System.Windows.Forms.Label();
+            this.lbNgayKhoiHanh = new System.Windows.Forms.Label();
             this.lbGiaVe = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.lbNhanVien = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -60,10 +64,6 @@ namespace BanVeTau.GUI
             this.label16 = new System.Windows.Forms.Label();
             this.cbKhachHang = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbNgayKhoiHanh = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lbGioChay = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -182,6 +182,28 @@ namespace BanVeTau.GUI
             this.lbDoanTau.TabIndex = 0;
             this.lbDoanTau.Text = "_";
             // 
+            // lbGioChay
+            // 
+            this.lbGioChay.AutoSize = true;
+            this.lbGioChay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGioChay.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lbGioChay.Location = new System.Drawing.Point(94, 243);
+            this.lbGioChay.Name = "lbGioChay";
+            this.lbGioChay.Size = new System.Drawing.Size(14, 13);
+            this.lbGioChay.TabIndex = 0;
+            this.lbGioChay.Text = "_";
+            // 
+            // lbNgayKhoiHanh
+            // 
+            this.lbNgayKhoiHanh.AutoSize = true;
+            this.lbNgayKhoiHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNgayKhoiHanh.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lbNgayKhoiHanh.Location = new System.Drawing.Point(94, 224);
+            this.lbNgayKhoiHanh.Name = "lbNgayKhoiHanh";
+            this.lbNgayKhoiHanh.Size = new System.Drawing.Size(14, 13);
+            this.lbNgayKhoiHanh.TabIndex = 0;
+            this.lbNgayKhoiHanh.Text = "_";
+            // 
             // lbGiaVe
             // 
             this.lbGiaVe.AutoSize = true;
@@ -192,6 +214,24 @@ namespace BanVeTau.GUI
             this.lbGiaVe.Size = new System.Drawing.Size(14, 13);
             this.lbGiaVe.TabIndex = 0;
             this.lbGiaVe.Text = "_";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 244);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Giờ khởi hành";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 225);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Ngày khởi hành";
             // 
             // label19
             // 
@@ -338,6 +378,7 @@ namespace BanVeTau.GUI
             this.label17.Size = new System.Drawing.Size(40, 13);
             this.label17.TabIndex = 0;
             this.label17.Text = "Số tiền";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // lbHeSo
             // 
@@ -375,46 +416,6 @@ namespace BanVeTau.GUI
             this.label15.Size = new System.Drawing.Size(65, 13);
             this.label15.TabIndex = 0;
             this.label15.Text = "Khách hàng";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 225);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Ngày khởi hành";
-            // 
-            // lbNgayKhoiHanh
-            // 
-            this.lbNgayKhoiHanh.AutoSize = true;
-            this.lbNgayKhoiHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgayKhoiHanh.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbNgayKhoiHanh.Location = new System.Drawing.Point(94, 224);
-            this.lbNgayKhoiHanh.Name = "lbNgayKhoiHanh";
-            this.lbNgayKhoiHanh.Size = new System.Drawing.Size(14, 13);
-            this.lbNgayKhoiHanh.TabIndex = 0;
-            this.lbNgayKhoiHanh.Text = "_";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 244);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Giờ khởi hành";
-            // 
-            // lbGioChay
-            // 
-            this.lbGioChay.AutoSize = true;
-            this.lbGioChay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGioChay.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbGioChay.Location = new System.Drawing.Point(94, 243);
-            this.lbGioChay.Name = "lbGioChay";
-            this.lbGioChay.Size = new System.Drawing.Size(14, 13);
-            this.lbGioChay.TabIndex = 0;
-            this.lbGioChay.Text = "_";
             // 
             // FCapNhatThongTinVe
             // 

@@ -341,7 +341,7 @@
             // 
             // gridGaCuoi1
             // 
-            this.gridGaCuoi1.Caption = "Ga cuối";
+            this.gridGaCuoi1.Caption = "Ga dừng";
             this.gridGaCuoi1.ColumnEdit = this.gridGaCuoi;
             this.gridGaCuoi1.FieldName = "GaTauCuoiId";
             this.gridGaCuoi1.Name = "gridGaCuoi1";

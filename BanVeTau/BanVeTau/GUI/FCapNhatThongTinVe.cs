@@ -141,8 +141,9 @@ namespace BanVeTau.GUI
             }
             else
             {
-                lbSoTien.Text = Ghe.SoTien.ToString("C0");
-                lbSoTien.Tag = Ghe.SoTien.ToString("C0");
+                label17.Text = "Số tiền trả lại";
+                lbSoTien.Text = (Ghe.SoTien * 0.8).ToString("C0");
+                lbSoTien.Tag = (Ghe.SoTien * 0.8).ToString("C0");
             }
         }
 
@@ -211,6 +212,11 @@ namespace BanVeTau.GUI
             {
                 MessageBox.Show("Huỷ vé " + Resources.thatBai, Resources.MThatBai);
             }
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
